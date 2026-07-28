@@ -4,7 +4,7 @@ from __future__ import annotations
 import logging
 import random
 
-from aiogram import F, Router
+from aiogram import Bot, F, Router
 from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
@@ -78,7 +78,7 @@ async def choose_length(callback: CallbackQuery, state: FSMContext) -> None:
     await state.set_state(Quiz.choosing_length)
     await state.update_data(deck=deck_name, category=category)
     await callback.message.edit_text(
-        f"✍️ <b>{deck.category_title(category)}</b> — {total} знаков\n"
+        f"✍️ <b>{deck.category_title(category)}</b> — {total} карточек\n"
         f"Сколько вопросов?",
         reply_markup=kb.quiz_length(total),
     )
@@ -105,13 +105,15 @@ async def begin_quiz(callback: CallbackQuery, state: FSMContext, db: Db) -> None
     await state.update_data(questions=questions, index=0, score=0, wrong=[], lang=lang)
 
     await callback.message.delete()
-    await media.send_card(
+    sent = await media.send_card(
         callback.message,
         db,
         cards.get_card(questions[0]["key"]),
         _question_caption(deck, category, questions[0], 1, len(questions)),
         kb.quiz_options(len(questions[0]["options"])),
     )
+    # id сообщения с вопросом нужен, чтобы отредактировать его при ответе цифрой
+    await state.update_data(question_msg_id=sent.message_id)
 
 
 @router.callback_query(Quiz.answering, F.data == kb.cb(kb.A_ANSWER, "done"))
@@ -120,39 +122,61 @@ async def already_answered(callback: CallbackQuery) -> None:
 
 
 @router.callback_query(Quiz.answering, F.data.startswith(kb.cb(kb.A_ANSWER, "")))
-async def answer_question(callback: CallbackQuery, state: FSMContext, db: Db) -> None:
+async def answer_question(callback: CallbackQuery, state: FSMContext, bot: Bot) -> None:
     _, _, payload = callback.data.split(":", 2)
-    chosen = int(payload)
-
-    data = await state.get_data()
-    questions = data.get("questions") or []
-    index = data.get("index", 0)
-    if index >= len(questions):
-        # Состояние есть, а вопросов нет — сессия испорчена, а не активна.
+    verdict = await _apply_answer(state, bot, callback.message.chat.id, int(payload))
+    if verdict is None:
         await state.clear()
         await callback.answer("Тест уже завершён — начните заново", show_alert=True)
         return
+    await callback.answer("✅ Верно" if verdict else "❌ Мимо")
+
+
+@router.message(Quiz.answering, F.text.regexp(r"^\s*[1-4]\s*$"))
+async def answer_by_text(message: Message, state: FSMContext, bot: Bot) -> None:
+    """Ответ набранной цифрой — не все нажимают кнопку под фото."""
+    chosen = int(message.text.strip()) - 1
+    verdict = await _apply_answer(state, bot, message.chat.id, chosen)
+    if verdict is None:
+        await state.clear()
+        await message.answer("Тест уже завершён — начните заново", reply_markup=kb.main_menu())
+
+
+async def _apply_answer(
+    state: FSMContext, bot: Bot, chat_id: int, chosen: int
+) -> bool | None:
+    """Засчитывает ответ и переписывает сообщение с вопросом.
+
+    Возвращает True/False (верно/неверно) либо None, если активного вопроса нет.
+    """
+    data = await state.get_data()
+    questions = data.get("questions") or []
+    index = data.get("index", 0)
+    message_id = data.get("question_msg_id")
+    if index >= len(questions) or message_id is None:
+        return None
 
     question = questions[index]
+    if not 0 <= chosen < len(question["options"]):
+        return None
+
     card = cards.get_card(question["key"])
     correct = question["correct"]
-
     is_right = chosen == correct
-    score = data["score"] + (1 if is_right else 0)
+
     wrong = list(data["wrong"])
     if not is_right:
         wrong.append(question["key"])
-    await state.update_data(score=score, wrong=wrong)
-
-    await callback.answer("✅ Верно" if is_right else "❌ Мимо")
-    if callback.message is None:
-        return
+    await state.update_data(score=data["score"] + (1 if is_right else 0), wrong=wrong)
 
     last = index == len(questions) - 1
-    await callback.message.edit_caption(
+    await bot.edit_message_caption(
+        chat_id=chat_id,
+        message_id=message_id,
         caption=_verdict_caption(card, is_right, index + 1, len(questions), data["lang"]),
         reply_markup=kb.quiz_answered(len(question["options"]), correct, chosen, last),
     )
+    return is_right
 
 
 @router.callback_query(Quiz.answering, F.data == kb.cb(kb.A_NEXT))
@@ -172,13 +196,15 @@ async def next_question(callback: CallbackQuery, state: FSMContext, db: Db) -> N
     await state.update_data(index=index)
     deck = cards.get_deck(data["deck"])
     question = questions[index]
-    await media.replace_card(
+    shown = await media.replace_card(
         callback.message,
         db,
         cards.get_card(question["key"]),
         _question_caption(deck, data["category"], question, index + 1, len(questions)),
         kb.quiz_options(len(question["options"])),
     )
+    if shown is not None:
+        await state.update_data(question_msg_id=shown.message_id)
 
 
 async def _finish(callback: CallbackQuery, state: FSMContext, db: Db) -> None:
