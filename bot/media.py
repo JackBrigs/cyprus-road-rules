@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import logging
 
+from aiogram import Bot
 from aiogram.types import FSInputFile, InlineKeyboardMarkup, InputMediaPhoto, Message
 
 from .cards import Card
@@ -56,6 +57,29 @@ async def replace_card(
     media, uploaded = await _media_for(db, card)
     edited = await message.edit_media(
         InputMediaPhoto(media=media, caption=caption),
+        reply_markup=markup,
+    )
+    if isinstance(edited, Message):
+        await _remember(db, card, edited, uploaded)
+        return edited
+    return None
+
+
+async def replace_card_by_id(
+    bot: Bot,
+    chat_id: int,
+    message_id: int,
+    db: Db,
+    card: Card,
+    caption: str,
+    markup: InlineKeyboardMarkup,
+) -> Message | None:
+    """То же, но по идентификаторам: объекта Message нет в фоновой задаче."""
+    media, uploaded = await _media_for(db, card)
+    edited = await bot.edit_message_media(
+        chat_id=chat_id,
+        message_id=message_id,
+        media=InputMediaPhoto(media=media, caption=caption),
         reply_markup=markup,
     )
     if isinstance(edited, Message):

@@ -1,6 +1,7 @@
 """Режим теста: фото знака + 4 варианта, подсчёт результата."""
 from __future__ import annotations
 
+import asyncio
 import logging
 import random
 
@@ -22,6 +23,10 @@ MODE = "quiz"
 OPTIONS = 4
 PASS_PERCENT = 90       # ориентир реального экзамена на Кипре
 MAX_LISTED_ERRORS = 20  # сколько ошибок перечислять в итоге теста
+NEXT_DELAY = 3.0        # пауза на чтение разбора перед следующим вопросом
+
+# Ссылки на фоновые таймеры автоперехода: без них задачу соберёт сборщик мусора.
+_TIMERS: set[asyncio.Task] = set()
 
 
 class Quiz(StatesGroup):
@@ -122,32 +127,40 @@ async def already_answered(callback: CallbackQuery) -> None:
 
 
 @router.callback_query(Quiz.answering, F.data.startswith(kb.cb(kb.A_ANSWER, "")))
-async def answer_question(callback: CallbackQuery, state: FSMContext, bot: Bot) -> None:
+async def answer_question(
+    callback: CallbackQuery, state: FSMContext, db: Db, bot: Bot
+) -> None:
     _, _, payload = callback.data.split(":", 2)
-    verdict = await _apply_answer(state, bot, callback.message.chat.id, int(payload))
-    if verdict is None:
+    result = await _apply_answer(state, bot, callback.message.chat.id, int(payload))
+    if result is None:
         await state.clear()
         await callback.answer("Тест уже завершён — начните заново", show_alert=True)
         return
-    await callback.answer("✅ Верно" if verdict else "❌ Мимо")
+    is_right, index = result
+    await callback.answer("✅ Верно" if is_right else "❌ Мимо")
+    _start_timer(bot, callback.message.chat.id, callback.from_user.id, state, db, index)
 
 
 @router.message(Quiz.answering, F.text.regexp(r"^\s*[1-4]\s*$"))
-async def answer_by_text(message: Message, state: FSMContext, bot: Bot) -> None:
+async def answer_by_text(
+    message: Message, state: FSMContext, db: Db, bot: Bot
+) -> None:
     """Ответ набранной цифрой — не все нажимают кнопку под фото."""
     chosen = int(message.text.strip()) - 1
-    verdict = await _apply_answer(state, bot, message.chat.id, chosen)
-    if verdict is None:
+    result = await _apply_answer(state, bot, message.chat.id, chosen)
+    if result is None:
         await state.clear()
         await message.answer("Тест уже завершён — начните заново", reply_markup=kb.main_menu())
+        return
+    _start_timer(bot, message.chat.id, message.from_user.id, state, db, result[1])
 
 
 async def _apply_answer(
     state: FSMContext, bot: Bot, chat_id: int, chosen: int
-) -> bool | None:
+) -> tuple[bool, int] | None:
     """Засчитывает ответ и переписывает сообщение с вопросом.
 
-    Возвращает True/False (верно/неверно) либо None, если активного вопроса нет.
+    Возвращает (верно ли, номер вопроса) либо None, если активного вопроса нет.
     """
     data = await state.get_data()
     questions = data.get("questions") or []
@@ -176,28 +189,50 @@ async def _apply_answer(
         caption=_verdict_caption(card, is_right, index + 1, len(questions), data["lang"]),
         reply_markup=kb.quiz_answered(len(question["options"]), correct, chosen, last),
     )
-    return is_right
+    return is_right, index
 
 
 @router.callback_query(Quiz.answering, F.data == kb.cb(kb.A_NEXT))
-async def next_question(callback: CallbackQuery, state: FSMContext, db: Db) -> None:
-    data = await state.get_data()
-    questions = data["questions"]
-    index = data["index"] + 1
-
+async def next_question(
+    callback: CallbackQuery, state: FSMContext, db: Db, bot: Bot
+) -> None:
+    """Кнопка «Дальше» — способ не ждать автоматического перехода."""
     await callback.answer()
     if callback.message is None:
         return
+    data = await state.get_data()
+    await _advance(bot, callback.message.chat.id, callback.from_user.id, state, db,
+                   from_index=data.get("index", 0))
 
-    if index >= len(questions):
-        await _finish(callback, state, db)
+
+async def _advance(
+    bot: Bot, chat_id: int, user_id: int, state: FSMContext, db: Db, from_index: int
+) -> None:
+    """Показывает следующий вопрос или итог.
+
+    ``from_index`` — номер вопроса, с которого уходим. Если в состоянии уже другой
+    номер, значит переход состоялся раньше (нажали «Дальше», не дождавшись таймера,
+    или наоборот) — второй раз не двигаем, иначе вопрос проскочит.
+    """
+    data = await state.get_data()
+    questions = data.get("questions") or []
+    index = data.get("index", 0)
+    if not questions or index != from_index:
         return
 
+    index += 1
     await state.update_data(index=index)
+
+    if index >= len(questions):
+        await _finish(bot, chat_id, user_id, state, db)
+        return
+
     deck = cards.get_deck(data["deck"])
     question = questions[index]
-    shown = await media.replace_card(
-        callback.message,
+    shown = await media.replace_card_by_id(
+        bot,
+        chat_id,
+        data["question_msg_id"],
         db,
         cards.get_card(question["key"]),
         _question_caption(deck, data["category"], question, index + 1, len(questions)),
@@ -207,7 +242,30 @@ async def next_question(callback: CallbackQuery, state: FSMContext, db: Db) -> N
         await state.update_data(question_msg_id=shown.message_id)
 
 
-async def _finish(callback: CallbackQuery, state: FSMContext, db: Db) -> None:
+async def _schedule_advance(
+    bot: Bot, chat_id: int, user_id: int, state: FSMContext, db: Db, from_index: int
+) -> None:
+    """Автопереход к следующему вопросу — даёт прочитать разбор ответа."""
+    await asyncio.sleep(NEXT_DELAY)
+    try:
+        await _advance(bot, chat_id, user_id, state, db, from_index)
+    except Exception:  # фоновая задача: исключение иначе потеряется
+        log.exception("Не удалось перейти к следующему вопросу")
+
+
+def _start_timer(bot: Bot, chat_id: int, user_id: int, state: FSMContext,
+                 db: Db, from_index: int) -> None:
+    task = asyncio.create_task(
+        _schedule_advance(bot, chat_id, user_id, state, db, from_index)
+    )
+    # Без ссылки задачу может собрать сборщик мусора до её завершения.
+    _TIMERS.add(task)
+    task.add_done_callback(_TIMERS.discard)
+
+
+async def _finish(
+    bot: Bot, chat_id: int, user_id: int, state: FSMContext, db: Db
+) -> None:
     data = await state.get_data()
     deck = cards.get_deck(data["deck"])
     total = len(data["questions"])
@@ -215,13 +273,16 @@ async def _finish(callback: CallbackQuery, state: FSMContext, db: Db) -> None:
     wrong = data["wrong"]
 
     # Ошибки возвращаются в повторение: тест и карточки — одна система прогресса.
-    await db.reset_cards(callback.from_user.id, wrong)
+    await db.reset_cards(user_id, wrong)
     label = f"{deck.title} · {deck.category_title(data['category'])}"
-    await db.add_quiz_result(callback.from_user.id, label, score, total)
+    await db.add_quiz_result(user_id, label, score, total)
 
+    message_id = data.get("question_msg_id")
     await state.clear()
-    await callback.message.delete()
-    await callback.message.answer(
+    if message_id is not None:
+        await bot.delete_message(chat_id=chat_id, message_id=message_id)
+    await bot.send_message(
+        chat_id,
         _result_text(label, score, total, wrong, data["lang"]),
         reply_markup=kb.back_to_menu(),
     )
@@ -282,6 +343,8 @@ def _verdict_caption(card, is_right: bool, number: int, total: int, lang: str) -
     ]
     if card.explanation_ru:
         lines.append(hitalic(card.explanation_ru))
+    tail = "итог" if number == total else "следующий вопрос"
+    lines.append(f"\n<i>Через {NEXT_DELAY:.0f} с — {tail}…</i>")
     return "\n".join(lines)
 
 
