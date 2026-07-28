@@ -1,0 +1,17 @@
+# Изображения не хранятся в репозитории: см. шаг 0 в README
+assets/img/
+assets/png/
+
+# Секреты и состояние
+.env
+var/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/

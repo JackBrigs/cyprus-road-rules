@@ -1,0 +1,668 @@
+{
+  "categories": {
+    "warning": {
+      "ru": "Предупреждающие",
+      "en": "Warning signs"
+    },
+    "priority": {
+      "ru": "Знаки приоритета",
+      "en": "Priority signs"
+    },
+    "prohibitory": {
+      "ru": "Запрещающие",
+      "en": "Prohibitory signs"
+    },
+    "mandatory": {
+      "ru": "Предписывающие",
+      "en": "Mandatory signs"
+    },
+    "info": {
+      "ru": "Информационные",
+      "en": "Information signs"
+    },
+    "marking": {
+      "ru": "Дорожная разметка",
+      "en": "Road markings"
+    },
+    "light": {
+      "ru": "Сигналы светофора",
+      "en": "Traffic lights"
+    },
+    "warden": {
+      "ru": "Жесты регулировщика",
+      "en": "Warden signals"
+    }
+  },
+  "cards": [
+    {
+      "id": "warn_bend_right",
+      "category": "warning",
+      "name_ru": "Опасный поворот направо",
+      "name_en": "Right hand bend",
+      "explanation_ru": "Снизьте скорость перед поворотом.",
+      "svg": "assets/svg/warn_bend_right.svg",
+      "png": "assets/png/warn_bend_right.png",
+      "name_el": "Στροφή δεξιά"
+    },
+    {
+      "id": "warn_crossroads",
+      "category": "warning",
+      "name_ru": "Перекрёсток",
+      "name_en": "Crossroads",
+      "explanation_ru": "Впереди пересечение равнозначных дорог.",
+      "svg": "assets/svg/warn_crossroads.svg",
+      "png": "assets/png/warn_crossroads.png",
+      "name_el": "Διασταύρωση"
+    },
+    {
+      "id": "warn_roundabout",
+      "category": "warning",
+      "name_ru": "Впереди круговое движение",
+      "name_en": "Roundabout ahead",
+      "explanation_ru": "Приоритет у тех, кто уже на круге.",
+      "svg": "assets/svg/warn_roundabout.svg",
+      "png": "assets/png/warn_roundabout.png",
+      "name_el": "Κυκλικός κόμβος (προειδοποίηση)"
+    },
+    {
+      "id": "warn_zebra",
+      "category": "warning",
+      "name_ru": "Пешеходный переход",
+      "name_en": "Zebra crossing",
+      "explanation_ru": "Будьте готовы пропустить пешеходов.",
+      "svg": "assets/svg/warn_zebra.svg",
+      "png": "assets/png/warn_zebra.png",
+      "name_el": "Διάβαση πεζών"
+    },
+    {
+      "id": "warn_children",
+      "category": "warning",
+      "name_ru": "Дети, школа рядом",
+      "name_en": "Children ahead",
+      "explanation_ru": "Возможен внезапный выход детей на дорогу.",
+      "svg": "assets/svg/warn_children.svg",
+      "png": "assets/png/warn_children.png",
+      "name_el": "Συχνή χρήση δρόμου από παιδιά"
+    },
+    {
+      "id": "warn_roadworks",
+      "category": "warning",
+      "name_ru": "Дорожные работы",
+      "name_en": "Road works",
+      "explanation_ru": "Возможны рабочие и техника на проезжей части.",
+      "svg": "assets/svg/warn_roadworks.svg",
+      "png": "assets/png/warn_roadworks.png",
+      "name_el": "Οδικά έργα"
+    },
+    {
+      "id": "warn_slippery",
+      "category": "warning",
+      "name_ru": "Скользкая дорога",
+      "name_en": "Slippery road",
+      "explanation_ru": "Избегайте резких манёвров и торможения.",
+      "svg": "assets/svg/warn_slippery.svg",
+      "png": "assets/png/warn_slippery.png",
+      "name_el": "Ολισθηρό οδόστρωμα"
+    },
+    {
+      "id": "warn_descent",
+      "category": "warning",
+      "name_ru": "Крутой спуск",
+      "name_en": "Steep descent",
+      "explanation_ru": "Тормозите двигателем, следите за скоростью.",
+      "svg": "assets/svg/warn_descent.svg",
+      "png": "assets/png/warn_descent.png",
+      "name_el": "Απότομη κατηφόρα"
+    },
+    {
+      "id": "warn_narrows",
+      "category": "warning",
+      "name_ru": "Сужение дороги",
+      "name_en": "Road narrows",
+      "explanation_ru": "Дорога сужается с обеих сторон.",
+      "svg": "assets/svg/warn_narrows.svg",
+      "png": "assets/png/warn_narrows.png",
+      "name_el": "Στένωση οδού"
+    },
+    {
+      "id": "warn_signals",
+      "category": "warning",
+      "name_ru": "Впереди светофор",
+      "name_en": "Traffic signals",
+      "explanation_ru": "Приготовьтесь к возможной остановке.",
+      "svg": "assets/svg/warn_signals.svg",
+      "png": "assets/png/warn_signals.png",
+      "name_el": "Φωτεινή σηματοδότηση μπροστά"
+    },
+    {
+      "id": "warn_animals",
+      "category": "warning",
+      "name_ru": "Дикие животные",
+      "name_en": "Wild animals",
+      "explanation_ru": "Возможен выход животных на дорогу.",
+      "svg": "assets/svg/warn_animals.svg",
+      "png": "assets/png/warn_animals.png",
+      "name_el": "Άγρια ζώα"
+    },
+    {
+      "id": "warn_giveway_ahead",
+      "category": "warning",
+      "name_ru": "Впереди «Уступи дорогу»",
+      "name_en": "Give way ahead",
+      "explanation_ru": "Через 200 м знак «Уступите дорогу».",
+      "svg": "assets/svg/warn_giveway_ahead.svg",
+      "png": "assets/png/warn_giveway_ahead.png",
+      "name_el": "Παραχώρηση προτεραιότητας μπροστά"
+    },
+    {
+      "id": "warn_hump",
+      "category": "warning",
+      "name_ru": "Искусственная неровность",
+      "name_en": "Speed hump",
+      "explanation_ru": "Снизьте скорость перед «лежачим полицейским».",
+      "svg": "assets/svg/warn_hump.svg",
+      "png": "assets/png/warn_hump.png",
+      "name_el": "Ανώμαλο ύψωμα οδοστρώματος"
+    },
+    {
+      "id": "warn_rocks",
+      "category": "warning",
+      "name_ru": "Камнепад",
+      "name_en": "Falling rocks",
+      "explanation_ru": "Возможны камни на проезжей части.",
+      "svg": "assets/svg/warn_rocks.svg",
+      "png": "assets/png/warn_rocks.png",
+      "name_el": "Πτώση βράχων"
+    },
+    {
+      "id": "prio_stop",
+      "category": "priority",
+      "name_ru": "Стоп, обязательная остановка",
+      "name_en": "Stop",
+      "explanation_ru": "Полная остановка обязательна, даже если дорога свободна.",
+      "svg": "assets/svg/prio_stop.svg",
+      "png": "assets/png/prio_stop.png",
+      "name_el": "Σήμα στάσης"
+    },
+    {
+      "id": "prio_giveway",
+      "category": "priority",
+      "name_ru": "Уступите дорогу",
+      "name_en": "Give way",
+      "explanation_ru": "Пропустите транспорт на пересекаемой дороге.",
+      "svg": "assets/svg/prio_giveway.svg",
+      "png": "assets/png/prio_giveway.png",
+      "name_el": "Παραχώρηση προτεραιότητας"
+    },
+    {
+      "id": "prio_main",
+      "category": "priority",
+      "name_ru": "Главная дорога",
+      "name_en": "Priority road",
+      "explanation_ru": "У вас приоритет на перекрёстках.",
+      "svg": "assets/svg/prio_main.svg",
+      "png": "assets/png/prio_main.png",
+      "name_el": "Δρόμος προτεραιότητας"
+    },
+    {
+      "id": "prio_main_end",
+      "category": "priority",
+      "name_ru": "Конец главной дороги",
+      "name_en": "End of priority",
+      "explanation_ru": "Приоритет закончился.",
+      "svg": "assets/svg/prio_main_end.svg",
+      "png": "assets/png/prio_main_end.png",
+      "name_el": "Τέλος δρόμου προτεραιότητας"
+    },
+    {
+      "id": "proh_noentry",
+      "category": "prohibitory",
+      "name_ru": "Въезд запрещён",
+      "name_en": "No entry",
+      "explanation_ru": "Движение в этом направлении запрещено для всех ТС.",
+      "svg": "assets/svg/proh_noentry.svg",
+      "png": "assets/png/proh_noentry.png",
+      "name_el": "Απαγόρευση εισόδου"
+    },
+    {
+      "id": "proh_speed50",
+      "category": "prohibitory",
+      "name_ru": "Ограничение скорости 50",
+      "name_en": "Speed limit 50",
+      "explanation_ru": "Не превышайте 50 км/ч.",
+      "svg": "assets/svg/proh_speed50.svg",
+      "png": "assets/png/proh_speed50.png",
+      "name_el": "Ανώτατο όριο ταχύτητας 50"
+    },
+    {
+      "id": "proh_speed_end",
+      "category": "prohibitory",
+      "name_ru": "Конец ограничения скорости",
+      "name_en": "End of speed limit",
+      "explanation_ru": "Действует общее ограничение для данного типа дороги.",
+      "svg": "assets/svg/proh_speed_end.svg",
+      "png": "assets/png/proh_speed_end.png",
+      "name_el": "Τέλος ανώτατου ορίου ταχύτητας"
+    },
+    {
+      "id": "proh_overtake",
+      "category": "prohibitory",
+      "name_ru": "Обгон запрещён",
+      "name_en": "No overtaking",
+      "explanation_ru": "Обгон механических ТС запрещён.",
+      "svg": "assets/svg/proh_overtake.svg",
+      "png": "assets/png/proh_overtake.png",
+      "name_el": "Απαγόρευση προσπεράσματος"
+    },
+    {
+      "id": "proh_nowaiting",
+      "category": "prohibitory",
+      "name_ru": "Стоянка запрещена",
+      "name_en": "No waiting",
+      "explanation_ru": "Остановиться для посадки/высадки можно, стоять нельзя.",
+      "svg": "assets/svg/proh_nowaiting.svg",
+      "png": "assets/png/proh_nowaiting.png",
+      "name_el": "Απαγόρευση στάθμευσης"
+    },
+    {
+      "id": "proh_nostopping",
+      "category": "prohibitory",
+      "name_ru": "Остановка запрещена",
+      "name_en": "No stopping",
+      "explanation_ru": "Запрещена даже кратковременная остановка.",
+      "svg": "assets/svg/proh_nostopping.svg",
+      "png": "assets/png/proh_nostopping.png",
+      "name_el": "Απαγόρευση στάσης και στάθμευσης"
+    },
+    {
+      "id": "proh_nouturn",
+      "category": "prohibitory",
+      "name_ru": "Разворот запрещён",
+      "name_en": "No U-turn",
+      "explanation_ru": "Разворот на данном участке запрещён.",
+      "svg": "assets/svg/proh_nouturn.svg",
+      "png": "assets/png/proh_nouturn.png",
+      "name_el": "Απαγόρευση αναστροφής"
+    },
+    {
+      "id": "proh_noleft",
+      "category": "prohibitory",
+      "name_ru": "Поворот налево запрещён",
+      "name_en": "No left turn",
+      "explanation_ru": "Поворот налево запрещён, разворот обычно тоже.",
+      "svg": "assets/svg/proh_noleft.svg",
+      "png": "assets/png/proh_noleft.png",
+      "name_el": "Απαγόρευση αριστερής στροφής"
+    },
+    {
+      "id": "proh_nohorn",
+      "category": "prohibitory",
+      "name_ru": "Звуковой сигнал запрещён",
+      "name_en": "No horn",
+      "explanation_ru": "Сигналить можно только для предотвращения ДТП.",
+      "svg": "assets/svg/proh_nohorn.svg",
+      "png": "assets/png/proh_nohorn.png",
+      "name_el": "Απαγόρευση χρήσης κόρνας"
+    },
+    {
+      "id": "proh_nomotor",
+      "category": "prohibitory",
+      "name_ru": "Движение механических ТС запрещено",
+      "name_en": "No motor vehicles",
+      "explanation_ru": "Запрет для автомобилей и мотоциклов.",
+      "svg": "assets/svg/proh_nomotor.svg",
+      "png": "assets/png/proh_nomotor.png",
+      "name_el": "Απαγόρευση μηχανοκίνητων οχημάτων"
+    },
+    {
+      "id": "proh_height",
+      "category": "prohibitory",
+      "name_ru": "Ограничение высоты 3,8 м",
+      "name_en": "Max height 3.8 m",
+      "explanation_ru": "Проезд ТС выше 3,8 м запрещён.",
+      "svg": "assets/svg/proh_height.svg",
+      "png": "assets/png/proh_height.png",
+      "name_el": "Απαγόρευση οχημάτων ύψους άνω των 3,8 μ."
+    },
+    {
+      "id": "proh_width",
+      "category": "prohibitory",
+      "name_ru": "Ограничение ширины 2 м",
+      "name_en": "Max width 2 m",
+      "explanation_ru": "Проезд ТС шире 2 м запрещён.",
+      "svg": "assets/svg/proh_width.svg",
+      "png": "assets/png/proh_width.png",
+      "name_el": "Απαγόρευση οχημάτων πλάτους άνω των 2 μ."
+    },
+    {
+      "id": "man_left",
+      "category": "mandatory",
+      "name_ru": "Движение налево",
+      "name_en": "Turn left ahead",
+      "explanation_ru": "Обязательный поворот налево.",
+      "svg": "assets/svg/man_left.svg",
+      "png": "assets/png/man_left.png",
+      "name_el": "Στροφή αριστερά μπροστά"
+    },
+    {
+      "id": "man_keepleft",
+      "category": "mandatory",
+      "name_ru": "Держитесь левее",
+      "name_en": "Keep left",
+      "explanation_ru": "Объезжайте препятствие слева.",
+      "svg": "assets/svg/man_keepleft.svg",
+      "png": "assets/png/man_keepleft.png",
+      "name_el": "Κρατήστε αριστερά"
+    },
+    {
+      "id": "man_roundabout",
+      "category": "mandatory",
+      "name_ru": "Круговое движение",
+      "name_en": "Roundabout",
+      "explanation_ru": "Движение по кругу по часовой стрелке (левостороннее движение).",
+      "svg": "assets/svg/man_roundabout.svg",
+      "png": "assets/png/man_roundabout.png",
+      "name_el": "Κυκλικός κόμβος (υποχρεωτικό)"
+    },
+    {
+      "id": "man_minspeed",
+      "category": "mandatory",
+      "name_ru": "Минимальная скорость 30",
+      "name_en": "Minimum speed 30",
+      "explanation_ru": "Ехать медленнее 30 км/ч запрещено.",
+      "svg": "assets/svg/man_minspeed.svg",
+      "png": "assets/png/man_minspeed.png",
+      "name_el": "Ελάχιστο όριο ταχύτητας 30"
+    },
+    {
+      "id": "man_pedestrians",
+      "category": "mandatory",
+      "name_ru": "Дорожка для пешеходов",
+      "name_en": "Pedestrians only",
+      "explanation_ru": "Только для пешеходов.",
+      "svg": "assets/svg/man_pedestrians.svg",
+      "png": "assets/png/man_pedestrians.png",
+      "name_el": "Υποχρεωτικός πεζόδρομος"
+    },
+    {
+      "id": "man_cycles",
+      "category": "mandatory",
+      "name_ru": "Дорожка для велосипедистов",
+      "name_en": "Cycle route only",
+      "explanation_ru": "Только для велосипедов.",
+      "svg": "assets/svg/man_cycles.svg",
+      "png": "assets/png/man_cycles.png",
+      "name_el": "Υποχρεωτικός ποδηλατόδρομος"
+    },
+    {
+      "id": "info_parking",
+      "category": "info",
+      "name_ru": "Парковка",
+      "name_en": "Parking",
+      "explanation_ru": "Разрешённое место стоянки.",
+      "svg": "assets/svg/info_parking.svg",
+      "png": "assets/png/info_parking.png",
+      "name_el": "Στάθμευση"
+    },
+    {
+      "id": "info_hospital",
+      "category": "info",
+      "name_ru": "Больница",
+      "name_en": "Hospital",
+      "explanation_ru": "Рядом больница: не шумите, будьте внимательны.",
+      "svg": "assets/svg/info_hospital.svg",
+      "png": "assets/png/info_hospital.png",
+      "name_el": "Νοσοκομείο"
+    },
+    {
+      "id": "info_oneway",
+      "category": "info",
+      "name_ru": "Одностороннее движение",
+      "name_en": "One-way street",
+      "explanation_ru": "Движение всей проезжей части в одном направлении.",
+      "svg": "assets/svg/info_oneway.svg",
+      "png": "assets/png/info_oneway.png",
+      "name_el": "Μονόδρομος"
+    },
+    {
+      "id": "info_deadend",
+      "category": "info",
+      "name_ru": "Тупик",
+      "name_en": "No through road",
+      "explanation_ru": "Сквозного проезда нет.",
+      "svg": "assets/svg/info_deadend.svg",
+      "png": "assets/png/info_deadend.png",
+      "name_el": "Αδιέξοδο"
+    },
+    {
+      "id": "info_motorway",
+      "category": "info",
+      "name_ru": "Автомагистраль",
+      "name_en": "Motorway",
+      "explanation_ru": "Начало автомагистрали: макс. 100, мин. 65 км/ч.",
+      "svg": "assets/svg/info_motorway.svg",
+      "png": "assets/png/info_motorway.png",
+      "name_el": "Αυτοκινητόδρομος"
+    },
+    {
+      "id": "info_busstop",
+      "category": "info",
+      "name_ru": "Остановка автобуса",
+      "name_en": "Bus stop",
+      "explanation_ru": "Место остановки маршрутного транспорта.",
+      "svg": "assets/svg/info_busstop.svg",
+      "png": "assets/png/info_busstop.png",
+      "name_el": "Στάση λεωφορείου"
+    },
+    {
+      "id": "mark_double_solid",
+      "category": "marking",
+      "name_ru": "Двойная сплошная",
+      "name_en": "Double white line",
+      "explanation_ru": "Пересекать и обгонять нельзя ни с одной стороны.",
+      "svg": "assets/svg/mark_double_solid.svg",
+      "png": "assets/png/mark_double_solid.png",
+      "name_el": "Διπλή συνεχής γραμμή"
+    },
+    {
+      "id": "mark_solid_broken",
+      "category": "marking",
+      "name_ru": "Сплошная и прерывистая",
+      "name_en": "Solid and broken line",
+      "explanation_ru": "Ориентируйтесь на ближнюю к вам линию: сплошную пересекать нельзя.",
+      "svg": "assets/svg/mark_solid_broken.svg",
+      "png": "assets/png/mark_solid_broken.png",
+      "name_el": "Συνεχής και διακεκομμένη γραμμή"
+    },
+    {
+      "id": "mark_broken",
+      "category": "marking",
+      "name_ru": "Прерывистая осевая",
+      "name_en": "Broken centre line",
+      "explanation_ru": "Обгон и пересечение разрешены, если безопасно.",
+      "svg": "assets/svg/mark_broken.svg",
+      "png": "assets/png/mark_broken.png",
+      "name_el": "Διακεκομμένη διαχωριστική γραμμή"
+    },
+    {
+      "id": "mark_hazard",
+      "category": "marking",
+      "name_ru": "Удлинённая прерывистая",
+      "name_en": "Hazard warning line",
+      "explanation_ru": "Предупреждение об опасности: не пересекайте без необходимости.",
+      "svg": "assets/svg/mark_hazard.svg",
+      "png": "assets/png/mark_hazard.png",
+      "name_el": "Προειδοποιητική γραμμή κινδύνου"
+    },
+    {
+      "id": "mark_double_yellow",
+      "category": "marking",
+      "name_ru": "Двойная жёлтая у обочины",
+      "name_en": "Double yellow lines",
+      "explanation_ru": "Остановка и стоянка запрещены в любое время.",
+      "svg": "assets/svg/mark_double_yellow.svg",
+      "png": "assets/png/mark_double_yellow.png",
+      "name_el": "Διπλή συνεχής κίτρινη γραμμή"
+    },
+    {
+      "id": "mark_single_yellow",
+      "category": "marking",
+      "name_ru": "Одинарная жёлтая у обочины",
+      "name_en": "Single yellow line",
+      "explanation_ru": "Стоянка запрещена в часы, указанные на табличке.",
+      "svg": "assets/svg/mark_single_yellow.svg",
+      "png": "assets/png/mark_single_yellow.png",
+      "name_el": "Μονή κίτρινη γραμμή"
+    },
+    {
+      "id": "mark_zigzag",
+      "category": "marking",
+      "name_ru": "Зигзаг у перехода",
+      "name_en": "Zigzag lines",
+      "explanation_ru": "Нельзя стоять и обгонять на подходе к переходу.",
+      "svg": "assets/svg/mark_zigzag.svg",
+      "png": "assets/png/mark_zigzag.png",
+      "name_el": "Γραμμές ζιγκ-ζαγκ"
+    },
+    {
+      "id": "mark_stopline",
+      "category": "marking",
+      "name_ru": "Стоп-линия",
+      "name_en": "Stop line",
+      "explanation_ru": "Полная остановка перед линией, даже если дорога свободна.",
+      "svg": "assets/svg/mark_stopline.svg",
+      "png": "assets/png/mark_stopline.png",
+      "name_el": "Γραμμή στάσης"
+    },
+    {
+      "id": "mark_givewayline",
+      "category": "marking",
+      "name_ru": "Линия «уступи дорогу»",
+      "name_en": "Give way line",
+      "explanation_ru": "Двойной пунктир поперёк: пропустите тех, кто на главной.",
+      "svg": "assets/svg/mark_givewayline.svg",
+      "png": "assets/png/mark_givewayline.png",
+      "name_el": "Γραμμή παραχώρησης προτεραιότητας"
+    },
+    {
+      "id": "mark_boxjunction",
+      "category": "marking",
+      "name_ru": "Жёлтая сетка на перекрёстке",
+      "name_en": "Box junction",
+      "explanation_ru": "Въезжать только когда выезд свободен.",
+      "svg": "assets/svg/mark_boxjunction.svg",
+      "png": "assets/png/mark_boxjunction.png",
+      "name_el": "Κίτρινο πλέγμα στη διασταύρωση"
+    },
+    {
+      "id": "mark_lanearrows",
+      "category": "marking",
+      "name_ru": "Стрелки по полосам",
+      "name_en": "Lane arrows",
+      "explanation_ru": "Полоса ведёт только в указанном направлении.",
+      "svg": "assets/svg/mark_lanearrows.svg",
+      "png": "assets/png/mark_lanearrows.png",
+      "name_el": "Βέλη επιλογής λωρίδας"
+    },
+    {
+      "id": "mark_zebra",
+      "category": "marking",
+      "name_ru": "Зебра",
+      "name_en": "Zebra crossing",
+      "explanation_ru": "Приоритет у пешехода, ступившего на переход.",
+      "svg": "assets/svg/mark_zebra.svg",
+      "png": "assets/png/mark_zebra.png",
+      "name_el": "Διάβαση πεζών (ζέβρα)"
+    },
+    {
+      "id": "light_red",
+      "category": "light",
+      "name_ru": "Красный",
+      "name_en": "Red light",
+      "explanation_ru": "Стоп перед стоп-линией. Движение запрещено.",
+      "svg": "assets/svg/light_red.svg",
+      "png": "assets/png/light_red.png",
+      "name_el": "Ερυθρό φως"
+    },
+    {
+      "id": "light_redamber",
+      "category": "light",
+      "name_ru": "Красный с жёлтым",
+      "name_en": "Red and amber",
+      "explanation_ru": "Скоро зелёный, приготовьтесь. Ехать ещё нельзя.",
+      "svg": "assets/svg/light_redamber.svg",
+      "png": "assets/png/light_redamber.png",
+      "name_el": "Ερυθρό και κίτρινο φως"
+    },
+    {
+      "id": "light_green",
+      "category": "light",
+      "name_ru": "Зелёный",
+      "name_en": "Green light",
+      "explanation_ru": "Движение разрешено, если перекрёсток свободен.",
+      "svg": "assets/svg/light_green.svg",
+      "png": "assets/png/light_green.png",
+      "name_el": "Πράσινο φως"
+    },
+    {
+      "id": "light_amber",
+      "category": "light",
+      "name_ru": "Жёлтый",
+      "name_en": "Amber light",
+      "explanation_ru": "Остановитесь, если можете сделать это безопасно.",
+      "svg": "assets/svg/light_amber.svg",
+      "png": "assets/png/light_amber.png",
+      "name_el": "Κίτρινο φως"
+    },
+    {
+      "id": "light_greenarrow",
+      "category": "light",
+      "name_ru": "Зелёная стрелка",
+      "name_en": "Green arrow",
+      "explanation_ru": "Движение разрешено только в направлении стрелки.",
+      "svg": "assets/svg/light_greenarrow.svg",
+      "png": "assets/png/light_greenarrow.png",
+      "name_el": "Πράσινο βέλος"
+    },
+    {
+      "id": "warden_up",
+      "category": "warden",
+      "name_ru": "Рука поднята вверх",
+      "name_en": "Arm raised up",
+      "explanation_ru": "Стоп для всех; кто уже на перекрёстке — завершает проезд.",
+      "svg": "assets/svg/warden_up.svg",
+      "png": "assets/png/warden_up.png",
+      "name_el": "Στάση για όλες τις κατευθύνσεις"
+    },
+    {
+      "id": "warden_side",
+      "category": "warden",
+      "name_ru": "Рука вытянута в сторону",
+      "name_en": "Arm extended",
+      "explanation_ru": "Стоп для транспорта, приближающегося спереди.",
+      "svg": "assets/svg/warden_side.svg",
+      "png": "assets/png/warden_side.png",
+      "name_el": "Στάση για την κυκλοφορία από μπροστά"
+    },
+    {
+      "id": "warden_both",
+      "category": "warden",
+      "name_ru": "Обе руки в стороны",
+      "name_en": "Both arms extended",
+      "explanation_ru": "Стоп спереди и сзади; поток сбоку едет.",
+      "svg": "assets/svg/warden_both.svg",
+      "png": "assets/png/warden_both.png",
+      "name_el": "Στάση για την κυκλοφορία από μπροστά και από πίσω"
+    },
+    {
+      "id": "warden_beckon",
+      "category": "warden",
+      "name_ru": "Приглашающий взмах",
+      "name_en": "Beckoning on",
+      "explanation_ru": "Проезд разрешён в указанном направлении.",
+      "svg": "assets/svg/warden_beckon.svg",
+      "png": "assets/png/warden_beckon.png",
+      "name_el": "Προχώρα για την κυκλοφορία από μπροστά"
+    }
+  ]
+}

@@ -1,0 +1,2165 @@
+{
+  "source": "https://driving.cy/en/signs",
+  "categories": {
+    "warning": {
+      "ru": "Предупреждающие знаки",
+      "en": "Warning signs"
+    },
+    "additional_markings": {
+      "ru": "Дополнительная маркировка",
+      "en": "Additional markings"
+    },
+    "prohibitory": {
+      "ru": "Запрещающие и ограничивающие",
+      "en": "Prohibitory or restriction signs"
+    },
+    "regulatory": {
+      "ru": "Регулирующие знаки",
+      "en": "Regulatory signs"
+    },
+    "no_parking": {
+      "ru": "Знаки запрета парковки",
+      "en": "No parking signs"
+    },
+    "mandatory": {
+      "ru": "Предписывающие знаки",
+      "en": "Mandatory signs"
+    },
+    "info": {
+      "ru": "Информационные знаки",
+      "en": "Information signs"
+    },
+    "additional": {
+      "ru": "Таблички-дополнения",
+      "en": "Additional signs"
+    },
+    "other": {
+      "ru": "Прочие официальные знаки",
+      "en": "Other official signs"
+    },
+    "north": {
+      "ru": "Северный Кипр / буферная зона",
+      "en": "Northern Cyprus"
+    },
+    "warden": {
+      "ru": "Сигналы регулировщика",
+      "en": "Signals by authorised persons"
+    },
+    "marking": {
+      "ru": "Дорожная разметка",
+      "en": "Road markings"
+    },
+    "roundabout": {
+      "ru": "Круговые развязки",
+      "en": "Roundabouts"
+    }
+  },
+  "cards": [
+    {
+      "id": "uk_traffic_sign_543",
+      "category": "warning",
+      "name_en": "Traffic signals ahead",
+      "name_ru": "Впереди светофор",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_543.svg",
+      "image": "assets/img/uk_traffic_sign_543.svg",
+      "name_el": "Φωτεινή σηματοδότηση μπροστά"
+    },
+    {
+      "id": "cyprus_warning_road_sign_crossroads",
+      "category": "warning",
+      "name_en": "Crossroads with priority to the right",
+      "name_ru": "Перекрёсток с приоритетом справа",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_warning_road_sign_crossroads.svg",
+      "image": "assets/img/cyprus_warning_road_sign_crossroads.svg",
+      "name_el": "Σταυροδρόμι με προτεραιότητα από δεξιά"
+    },
+    {
+      "id": "uk_traffic_sign_505_1_left",
+      "category": "warning",
+      "name_en": "T-junction",
+      "name_ru": "Т-образный перекрёсток",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_505.1_(left).svg",
+      "image": "assets/img/uk_traffic_sign_505_1_left.svg",
+      "name_el": "Τ-διασταύρωση"
+    },
+    {
+      "id": "uk_traffic_sign_506_1_variant_1_right",
+      "category": "warning",
+      "name_en": "Junctions with secondary roads",
+      "name_ru": "Примыкание второстепенных дорог",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_506.1_(variant_1,_right).svg",
+      "image": "assets/img/uk_traffic_sign_506_1_variant_1_right.svg",
+      "name_el": "Διασταυρώσεις με δευτερεύοντες δρόμους"
+    },
+    {
+      "id": "uk_traffic_sign_507_1_variant_1_right",
+      "category": "warning",
+      "name_en": "Staggered junction with secondary roads",
+      "name_ru": "Смещённое примыкание второстепенных дорог",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_507.1_(variant_1,_right).svg",
+      "image": "assets/img/uk_traffic_sign_507_1_variant_1_right.svg",
+      "name_el": "Μετατοπισμένη διασταύρωση με δευτερεύοντες δρόμους"
+    },
+    {
+      "id": "uk_traffic_sign_508_1",
+      "category": "warning",
+      "name_en": "Traffic merges from the left",
+      "name_ru": "Слияние потока слева",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_508.1.svg",
+      "image": "assets/img/uk_traffic_sign_508_1.svg",
+      "name_el": "Συγχώνευση κυκλοφορίας από αριστερά"
+    },
+    {
+      "id": "uk_traffic_sign_509_1",
+      "category": "warning",
+      "name_en": "Traffic merges onto the main carriageway",
+      "name_ru": "Слияние с основной проезжей частью",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_509.1.svg",
+      "image": "assets/img/uk_traffic_sign_509_1.svg",
+      "name_el": "Συγχώνευση κυκλοφορίας στην κύρια οδό"
+    },
+    {
+      "id": "uk_traffic_sign_510",
+      "category": "warning",
+      "name_en": "Roundabout (warning)",
+      "name_ru": "Впереди круговое движение",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_510.svg",
+      "image": "assets/img/uk_traffic_sign_510.svg",
+      "name_el": "Κυκλικός κόμβος (προειδοποίηση)"
+    },
+    {
+      "id": "uk_traffic_sign_512_right",
+      "category": "warning",
+      "name_en": "Bend to right (left if reversed)",
+      "name_ru": "Поворот направо (налево — зеркально)",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_512_(right).svg",
+      "image": "assets/img/uk_traffic_sign_512_right.svg",
+      "name_el": "Στροφή δεξιά (αριστερά αν αντιστραφεί)"
+    },
+    {
+      "id": "uk_traffic_sign_513_left",
+      "category": "warning",
+      "name_en": "Double bend first to the left (right if reversed)",
+      "name_ru": "Двойной поворот, первый налево",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_513_(left).svg",
+      "image": "assets/img/uk_traffic_sign_513_left.svg",
+      "name_el": "Διπλή στροφή πρώτα αριστερά (δεξιά αν αντιστραφεί)"
+    },
+    {
+      "id": "uk_traffic_sign_512_1_right",
+      "category": "warning",
+      "name_en": "Junction on a bend outside (may be reversed)",
+      "name_ru": "Примыкание на внешней стороне поворота",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_512.1_(right).svg",
+      "image": "assets/img/uk_traffic_sign_512_1_right.svg",
+      "name_el": "Διασταύρωση σε εξωτερική στροφή (μπορεί να αντιστραφεί)"
+    },
+    {
+      "id": "uk_traffic_sign_512_2_right",
+      "category": "warning",
+      "name_en": "Junction on a bend inside (may be reversed)",
+      "name_ru": "Примыкание на внутренней стороне поворота",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_512.2_(right).svg",
+      "image": "assets/img/uk_traffic_sign_512_2_right.svg",
+      "name_el": "Διασταύρωση σε εσωτερική στροφή (μπορεί να αντιστραφεί)"
+    },
+    {
+      "id": "uk_traffic_sign_516",
+      "category": "warning",
+      "name_en": "Road narrows on both sides",
+      "name_ru": "Сужение дороги с обеих сторон",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_516.svg",
+      "image": "assets/img/uk_traffic_sign_516.svg",
+      "name_el": "Στένωση οδού και από τις δύο πλευρές"
+    },
+    {
+      "id": "uk_traffic_sign_517_right",
+      "category": "warning",
+      "name_en": "Road narrows on the right (left if reversed)",
+      "name_ru": "Сужение дороги справа",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_517_(right).svg",
+      "image": "assets/img/uk_traffic_sign_517_right.svg",
+      "name_el": "Στένωση οδού δεξιά (αριστερά αν αντιστραφεί)"
+    },
+    {
+      "id": "uk_traffic_sign_520",
+      "category": "warning",
+      "name_en": "End of dual carriageway",
+      "name_ru": "Конец дороги с разделёнными проезжими частями",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_520.svg",
+      "image": "assets/img/uk_traffic_sign_520.svg",
+      "name_el": "Τέλος διπλού οδοστρώματος"
+    },
+    {
+      "id": "uk_traffic_sign_521",
+      "category": "warning",
+      "name_en": "Two-way traffic",
+      "name_ru": "Двустороннее движение",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_521.svg",
+      "image": "assets/img/uk_traffic_sign_521.svg",
+      "name_el": "Κυκλοφορία διπλής κατεύθυνσης"
+    },
+    {
+      "id": "uk_traffic_sign_522",
+      "category": "warning",
+      "name_en": "Two-way traffic on route crossing ahead",
+      "name_ru": "Пересечение с двусторонним движением",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_522.svg",
+      "image": "assets/img/uk_traffic_sign_522.svg",
+      "name_el": "Κυκλοφορία διπλής κατεύθυνσης σε διασταύρωση μπροστά"
+    },
+    {
+      "id": "uk_traffic_sign_523_1",
+      "category": "warning",
+      "name_en": "Steep descent",
+      "name_ru": "Крутой спуск",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_523.1.svg",
+      "image": "assets/img/uk_traffic_sign_523_1.svg",
+      "name_el": "Απότομη κατηφόρα"
+    },
+    {
+      "id": "uk_traffic_sign_524_1",
+      "category": "warning",
+      "name_en": "Steep ascent",
+      "name_ru": "Крутой подъём",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_524.1.svg",
+      "image": "assets/img/uk_traffic_sign_524_1.svg",
+      "name_el": "Απότομη ανηφόρα"
+    },
+    {
+      "id": "uk_traffic_sign_529",
+      "category": "warning",
+      "name_en": "Opening or swing bridge",
+      "name_ru": "Разводной мост",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_529.svg",
+      "image": "assets/img/uk_traffic_sign_529.svg",
+      "name_el": "Ανοιγόμενη ή περιστρεφόμενη γέφυρα"
+    },
+    {
+      "id": "uk_traffic_sign_555",
+      "category": "warning",
+      "name_en": "Riverbank or quayside",
+      "name_ru": "Берег реки или набережная",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_555.svg",
+      "image": "assets/img/uk_traffic_sign_555.svg",
+      "name_el": "Όχθη ποταμού ή προκυμαία"
+    },
+    {
+      "id": "uk_traffic_sign_555_1",
+      "category": "warning",
+      "name_en": "Water course alongside road",
+      "name_ru": "Водоём вдоль дороги",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_555.1.svg",
+      "image": "assets/img/uk_traffic_sign_555_1.svg",
+      "name_el": "Υδάτινη ροή κατά μήκος του δρόμου"
+    },
+    {
+      "id": "uk_traffic_sign_556_1",
+      "category": "warning",
+      "name_en": "Soft verges left",
+      "name_ru": "Мягкая обочина слева",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_556.1.svg",
+      "image": "assets/img/uk_traffic_sign_556_1.svg",
+      "name_el": "Μαλακό έρεισμα αριστερά"
+    },
+    {
+      "id": "cyprus_warning_road_sign_friable_street",
+      "category": "warning",
+      "name_en": "Soft verges right",
+      "name_ru": "Мягкая обочина справа",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_warning_road_sign_friable_street.svg",
+      "image": "assets/img/cyprus_warning_road_sign_friable_street.svg",
+      "name_el": "Μαλακό έρεισμα δεξιά"
+    },
+    {
+      "id": "uk_traffic_sign_529_1",
+      "category": "warning",
+      "name_en": "Tunnel",
+      "name_ru": "Тоннель",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_529.1.svg",
+      "image": "assets/img/uk_traffic_sign_529_1.svg",
+      "name_el": "Σήραγγα"
+    },
+    {
+      "id": "uk_traffic_sign_528",
+      "category": "warning",
+      "name_en": "Hump bridge",
+      "name_ru": "Горбатый мост",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_528.svg",
+      "image": "assets/img/uk_traffic_sign_528.svg",
+      "name_el": "Γέφυρα με κύρτωμα"
+    },
+    {
+      "id": "uk_traffic_sign_556",
+      "category": "warning",
+      "name_en": "Uneven road",
+      "name_ru": "Неровная дорога",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_556.svg",
+      "image": "assets/img/uk_traffic_sign_556.svg",
+      "name_el": "Ανώμαλο οδόστρωμα"
+    },
+    {
+      "id": "uk_traffic_sign_557",
+      "category": "warning",
+      "name_en": "Slippery road",
+      "name_ru": "Скользкая дорога",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_557.svg",
+      "image": "assets/img/uk_traffic_sign_557.svg",
+      "name_el": "Ολισθηρό οδόστρωμα"
+    },
+    {
+      "id": "uk_traffic_sign_581",
+      "category": "warning",
+      "name_en": "Side winds",
+      "name_ru": "Боковой ветер",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_581.svg",
+      "image": "assets/img/uk_traffic_sign_581.svg",
+      "name_el": "Πλάγιοι άνεμοι"
+    },
+    {
+      "id": "uk_traffic_sign_558",
+      "category": "warning",
+      "name_en": "Low-flying aircraft or sudden aircraft noise",
+      "name_ru": "Низколетящие самолёты",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_558.svg",
+      "image": "assets/img/uk_traffic_sign_558.svg",
+      "name_el": "Χαμηλή πτήση αεροσκαφών ή αιφνίδιος θόρυβος"
+    },
+    {
+      "id": "uk_traffic_sign_558_1",
+      "category": "warning",
+      "name_en": "Low-flying helicopters or sudden helicopter noise",
+      "name_ru": "Низколетящие вертолёты",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_558.1.svg",
+      "image": "assets/img/uk_traffic_sign_558_1.svg",
+      "name_el": "Χαμηλή πτήση ελικοπτέρων ή αιφνίδιος θόρυβος"
+    },
+    {
+      "id": "uk_traffic_sign_559_left",
+      "category": "warning",
+      "name_en": "Falling or fallen rocks",
+      "name_ru": "Камнепад",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_559_(left).svg",
+      "image": "assets/img/uk_traffic_sign_559_left.svg",
+      "name_el": "Πτώση βράχων"
+    },
+    {
+      "id": "uk_traffic_sign_584",
+      "category": "warning",
+      "name_en": "Traffic queues likely ahead",
+      "name_ru": "Вероятны заторы",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_584.svg",
+      "image": "assets/img/uk_traffic_sign_584.svg",
+      "name_el": "Πιθανή ουρά κυκλοφορίας μπροστά"
+    },
+    {
+      "id": "uk_traffic_sign_582",
+      "category": "warning",
+      "name_en": "Slow-moving military vehicles likely",
+      "name_ru": "Тихоходная военная техника",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_582.svg",
+      "image": "assets/img/uk_traffic_sign_582.svg",
+      "name_el": "Αργοκίνητα στρατιωτικά οχήματα στον δρόμο"
+    },
+    {
+      "id": "uk_traffic_sign_583",
+      "category": "warning",
+      "name_en": "Slow-moving vehicles",
+      "name_ru": "Тихоходный транспорт",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_583.svg",
+      "image": "assets/img/uk_traffic_sign_583.svg",
+      "name_el": "Αργοκίνητα οχήματα"
+    },
+    {
+      "id": "uk_traffic_sign_554_2",
+      "category": "warning",
+      "name_en": "Ice or snowdrifts",
+      "name_ru": "Гололёд или снежные заносы",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_554.2.svg",
+      "image": "assets/img/uk_traffic_sign_554_2.svg",
+      "name_el": "Πάγος ή χιονοστιβάδες"
+    },
+    {
+      "id": "uk_traffic_sign_562",
+      "category": "warning",
+      "name_en": "Other dangers (with explanatory plate)",
+      "name_ru": "Прочие опасности (с поясняющей табличкой)",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_562.svg",
+      "image": "assets/img/uk_traffic_sign_562.svg",
+      "name_el": "Άλλοι κίνδυνοι (με πινακίδα υποδείξεως κινδύνου)"
+    },
+    {
+      "id": "uk_traffic_sign_544",
+      "category": "warning",
+      "name_en": "Pedestrian crossing",
+      "name_ru": "Пешеходный переход",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_544.svg",
+      "image": "assets/img/uk_traffic_sign_544.svg",
+      "name_el": "Διάβαση πεζών"
+    },
+    {
+      "id": "uk_traffic_sign_544_1",
+      "category": "warning",
+      "name_en": "Pedestrians ahead",
+      "name_ru": "Пешеходы на дороге",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_544.1.svg",
+      "image": "assets/img/uk_traffic_sign_544_1.svg",
+      "name_el": "Πεζοί μπροστά"
+    },
+    {
+      "id": "uk_traffic_sign_544_2",
+      "category": "warning",
+      "name_en": "Frail or disabled pedestrians likely to cross",
+      "name_ru": "Пожилые или слабовидящие пешеходы",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_544.2.svg",
+      "image": "assets/img/uk_traffic_sign_544_2.svg",
+      "name_el": "Αδύναμοι πεζοί πιθανό να διασχίζουν τον δρόμο"
+    },
+    {
+      "id": "cyprus_warning_road_sign_child",
+      "category": "warning",
+      "name_en": "School crossing",
+      "name_ru": "Школьный переход, дети",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_warning_road_sign_child.svg",
+      "image": "assets/img/cyprus_warning_road_sign_child.svg",
+      "name_el": "Σχολική διάβαση"
+    },
+    {
+      "id": "frequent_use_of_road_by_childern",
+      "category": "warning",
+      "name_en": "Frequent use of road by children",
+      "name_ru": "Дорога, часто используемая детьми",
+      "image_url": "https://driving.cy/signs/Signs/frequent_use_of_road_by_childern.png",
+      "image": "assets/img/frequent_use_of_road_by_childern.png",
+      "name_el": "Συχνή χρήση δρόμου από παιδιά"
+    },
+    {
+      "id": "uk_traffic_sign_550_2",
+      "category": "warning",
+      "name_en": "Horse-drawn vehicles likely ahead",
+      "name_ru": "Гужевой транспорт",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_550.2.svg",
+      "image": "assets/img/uk_traffic_sign_550_2.svg",
+      "name_el": "Ιππήλατα οχήματα μπροστά"
+    },
+    {
+      "id": "uk_traffic_sign_550_1",
+      "category": "warning",
+      "name_en": "Accompanied horses or ponies likely ahead",
+      "name_ru": "Сопровождаемые лошади или пони",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_550.1.svg",
+      "image": "assets/img/uk_traffic_sign_550_1.svg",
+      "name_el": "Άλογα ή πόνυ με συνοδούς μπροστά ή διασχίζοντα"
+    },
+    {
+      "id": "uk_traffic_sign_550",
+      "category": "warning",
+      "name_en": "Wild horses or ponies",
+      "name_ru": "Дикие лошади или пони",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_550.svg",
+      "image": "assets/img/uk_traffic_sign_550.svg",
+      "name_el": "Άγρια άλογα ή πόνυ"
+    },
+    {
+      "id": "uk_traffic_sign_551",
+      "category": "warning",
+      "name_en": "Wild animals",
+      "name_ru": "Дикие животные",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_551.svg",
+      "image": "assets/img/uk_traffic_sign_551.svg",
+      "name_el": "Άγρια ζώα"
+    },
+    {
+      "id": "uk_traffic_sign_553_1",
+      "category": "warning",
+      "name_en": "Agricultural vehicles",
+      "name_ru": "Сельскохозяйственная техника",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_553.1.svg",
+      "image": "assets/img/uk_traffic_sign_553_1.svg",
+      "name_el": "Γεωργικά οχήματα"
+    },
+    {
+      "id": "uk_traffic_sign_548",
+      "category": "warning",
+      "name_en": "Cattle",
+      "name_ru": "Скот",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_548.svg",
+      "image": "assets/img/uk_traffic_sign_548.svg",
+      "name_el": "Βοοειδή"
+    },
+    {
+      "id": "uk_traffic_sign_772",
+      "category": "warning",
+      "name_en": "Tramway",
+      "name_ru": "Трамвайные пути",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_772.svg",
+      "image": "assets/img/uk_traffic_sign_772.svg",
+      "name_el": "Τραμ"
+    },
+    {
+      "id": "cyprus_warning_road_sign_give_way_ahead",
+      "category": "warning",
+      "name_en": "Distance to 'Give Way' line ahead",
+      "name_ru": "Расстояние до линии «Уступите дорогу»",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_warning_road_sign_give_way_ahead.svg",
+      "image": "assets/img/cyprus_warning_road_sign_give_way_ahead.svg",
+      "name_el": "Παραχώρηση προτεραιότητας μπροστά"
+    },
+    {
+      "id": "cyprus_warning_road_sign_stop_ahead",
+      "category": "warning",
+      "name_en": "Distance to 'STOP' line ahead",
+      "name_ru": "Расстояние до линии «Стоп»",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_warning_road_sign_stop_ahead.svg",
+      "image": "assets/img/cyprus_warning_road_sign_stop_ahead.svg",
+      "name_el": "Στάση μπροστά"
+    },
+    {
+      "id": "uk_traffic_sign_779",
+      "category": "warning",
+      "name_en": "Electrified overhead cable ahead",
+      "name_ru": "Электрифицированный провод над дорогой",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_779.svg",
+      "image": "assets/img/uk_traffic_sign_779.svg",
+      "name_el": "Ηλεκτροφόρο εναέριο καλώδιο μπροστά"
+    },
+    {
+      "id": "uk_traffic_sign_7001",
+      "category": "warning",
+      "name_en": "Road works",
+      "name_ru": "Дорожные работы",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_7001.svg",
+      "image": "assets/img/uk_traffic_sign_7001.svg",
+      "name_el": "Οδικά έργα"
+    },
+    {
+      "id": "uk_traffic_sign_7009",
+      "category": "warning",
+      "name_en": "Loose chippings",
+      "name_ru": "Выброс гравия",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_7009.svg",
+      "image": "assets/img/uk_traffic_sign_7009.svg",
+      "name_el": "Χαλαρά χαλίκια"
+    },
+    {
+      "id": "uk_traffic_sign_774",
+      "category": "warning",
+      "name_en": "No barrier level crossing (nearby)",
+      "name_ru": "Ж/д переезд без шлагбаума (рядом)",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_774.svg",
+      "image": "assets/img/uk_traffic_sign_774.svg",
+      "name_el": "Ισόπεδη σιδηροδρομική διάβαση χωρίς μπάρα (κοντά)"
+    },
+    {
+      "id": "uk_traffic_sign_770",
+      "category": "warning",
+      "name_en": "Level crossing with barrier or gate",
+      "name_ru": "Ж/д переезд со шлагбаумом",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_770.svg",
+      "image": "assets/img/uk_traffic_sign_770.svg",
+      "name_el": "Ισόπεδη σιδηροδρομική διάβαση με μπάρα ή πύλη"
+    },
+    {
+      "id": "uk_traffic_sign_771",
+      "category": "warning",
+      "name_en": "Level crossing without barrier or gate",
+      "name_ru": "Ж/д переезд без шлагбаума",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_771.svg",
+      "image": "assets/img/uk_traffic_sign_771.svg",
+      "name_el": "Ισόπεδη σιδηροδρομική διάβαση χωρίς μπάρα ή πύλη"
+    },
+    {
+      "id": "uk_traffic_sign_782",
+      "category": "warning",
+      "name_en": "Risk of grounding",
+      "name_ru": "Риск задевания днищем",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_782.svg",
+      "image": "assets/img/uk_traffic_sign_782.svg",
+      "name_el": "Κίνδυνος προσάραξης"
+    },
+    {
+      "id": "road_hump",
+      "category": "warning",
+      "name_en": "Road hump",
+      "name_ru": "Искусственная неровность",
+      "image_url": "https://driving.cy/signs/Signs/road_hump.png",
+      "image": "assets/img/road_hump.png",
+      "name_el": "Ανώμαλο ύψωμα οδοστρώματος"
+    },
+    {
+      "id": "cyprus_warning_road_sign_distance_to_level_crossing",
+      "category": "additional_markings",
+      "name_en": "Countdown markers to a level crossing",
+      "name_ru": "Отсчёт расстояния до ж/д переезда (каждая полоса — 1/3 пути)",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_warning_road_sign_distance_to_level_crossing.svg",
+      "image": "assets/img/cyprus_warning_road_sign_distance_to_level_crossing.svg",
+      "name_el": "Απόσταση μέχρι ισόπεδη σιδηροδρομική διάβαση"
+    },
+    {
+      "id": "cyprus_road_sign_obstacle",
+      "category": "additional_markings",
+      "name_en": "Compulsory directions: traffic island or obstacle",
+      "name_ru": "Объезд островка или препятствия",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_obstacle.svg",
+      "image": "assets/img/cyprus_road_sign_obstacle.svg",
+      "name_el": "Εμπόδιο"
+    },
+    {
+      "id": "cyprus_warning_road_sign_obstacle_left",
+      "category": "additional_markings",
+      "name_en": "Compulsory directions: obstacle (left)",
+      "name_ru": "Объезд препятствия слева",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_warning_road_sign_obstacle_left.svg",
+      "image": "assets/img/cyprus_warning_road_sign_obstacle_left.svg",
+      "name_el": "Εμπόδιο αριστερά"
+    },
+    {
+      "id": "cyprus_warning_road_sign_obstacle_right",
+      "category": "additional_markings",
+      "name_en": "Compulsory directions: obstacle (right)",
+      "name_ru": "Объезд препятствия справа",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_warning_road_sign_obstacle_right.svg",
+      "image": "assets/img/cyprus_warning_road_sign_obstacle_right.svg",
+      "name_el": "Εμπόδιο δεξιά"
+    },
+    {
+      "id": "temporary_sharp_deviation",
+      "category": "additional_markings",
+      "name_en": "Compulsory direction to the left",
+      "name_ru": "Обязательное направление налево",
+      "image_url": "https://driving.cy/signs/Signs/temporary_sharp_deviation.png",
+      "image": "assets/img/temporary_sharp_deviation.png",
+      "name_el": "Υποχρεωτική κατεύθυνση αριστερά"
+    },
+    {
+      "id": "compulsory_direction_to_the_right",
+      "category": "additional_markings",
+      "name_en": "Compulsory direction to the right",
+      "name_ru": "Обязательное направление направо",
+      "image_url": "https://driving.cy/signs/Signs/compulsory_direction_to_the_right.png",
+      "image": "assets/img/compulsory_direction_to_the_right.png",
+      "name_el": "Υποχρεωτική κατεύθυνση δεξιά"
+    },
+    {
+      "id": "compulsory_direction_to_the_left_or_right",
+      "category": "additional_markings",
+      "name_en": "Compulsory direction to the left or right",
+      "name_ru": "Обязательное направление налево или направо",
+      "image_url": "https://driving.cy/signs/Signs/compulsory_direction_to_the_left_or_right.png",
+      "image": "assets/img/compulsory_direction_to_the_left_or_right.png",
+      "name_el": "Υποχρεωτική κατεύθυνση αριστερά ή δεξιά"
+    },
+    {
+      "id": "cyprus_road_sign_no_hand_vehicles",
+      "category": "prohibitory",
+      "name_en": "No hand vehicles",
+      "name_ru": "Движение ручных тележек запрещено",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_no_hand_vehicles.svg",
+      "image": "assets/img/cyprus_road_sign_no_hand_vehicles.svg",
+      "name_el": "Απαγόρευση χειράμαξων"
+    },
+    {
+      "id": "cyprus_road_sign_no_motorcycles",
+      "category": "prohibitory",
+      "name_en": "No motorcycles",
+      "name_ru": "Движение мотоциклов запрещено",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_no_motorcycles.svg",
+      "image": "assets/img/cyprus_road_sign_no_motorcycles.svg",
+      "name_el": "Απαγόρευση μοτοσικλετών"
+    },
+    {
+      "id": "cyprus_road_sign_no_mopeds",
+      "category": "prohibitory",
+      "name_en": "No mopeds",
+      "name_ru": "Движение мопедов запрещено",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_no_mopeds.svg",
+      "image": "assets/img/cyprus_road_sign_no_mopeds.svg",
+      "name_el": "Απαγόρευση μοτοποδηλάτων"
+    },
+    {
+      "id": "no_crossing_for_pedestrian",
+      "category": "prohibitory",
+      "name_en": "No pedestrians",
+      "name_ru": "Движение пешеходов запрещено",
+      "image_url": "https://driving.cy/signs/Signs/no-crossing-for-pedestrian.jpg",
+      "image": "assets/img/no_crossing_for_pedestrian.jpg",
+      "name_el": "Απαγόρευση πεζών"
+    },
+    {
+      "id": "cyprus_road_sign_no_motor_vehicles",
+      "category": "prohibitory",
+      "name_en": "No motor vehicles",
+      "name_ru": "Движение механических ТС запрещено",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_no_motor_vehicles.svg",
+      "image": "assets/img/cyprus_road_sign_no_motor_vehicles.svg",
+      "name_el": "Απαγόρευση μηχανοκίνητων οχημάτων"
+    },
+    {
+      "id": "cyprus_road_sign_no_agricle_vehicles",
+      "category": "prohibitory",
+      "name_en": "No agricultural vehicles",
+      "name_ru": "Движение сельхозтехники запрещено",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_no_agricle_vehicles.svg",
+      "image": "assets/img/cyprus_road_sign_no_agricle_vehicles.svg",
+      "name_el": "Απαγόρευση γεωργικών οχημάτων"
+    },
+    {
+      "id": "cyprus_road_sign_no_animal_vehicles",
+      "category": "prohibitory",
+      "name_en": "No animal-drawn vehicles",
+      "name_ru": "Движение гужевого транспорта запрещено",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_no_animal_vehicles.svg",
+      "image": "assets/img/cyprus_road_sign_no_animal_vehicles.svg",
+      "name_el": "Απαγόρευση ιππήλατων οχημάτων"
+    },
+    {
+      "id": "cyprus_road_sign_toll_post",
+      "category": "prohibitory",
+      "name_en": "Stop. Toll post",
+      "name_ru": "Стоп. Пункт оплаты",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_toll_post.svg",
+      "image": "assets/img/cyprus_road_sign_toll_post.svg",
+      "name_el": "Στάση. Σταθμός διοδίων"
+    },
+    {
+      "id": "cyprus_road_sign_no_horn",
+      "category": "prohibitory",
+      "name_en": "No horn",
+      "name_ru": "Звуковой сигнал запрещён",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_no_horn.svg",
+      "image": "assets/img/cyprus_road_sign_no_horn.svg",
+      "name_el": "Απαγόρευση χρήσης κόρνας"
+    },
+    {
+      "id": "cyprus_road_sign_customs",
+      "category": "prohibitory",
+      "name_en": "Stop. Customs",
+      "name_ru": "Стоп. Таможня",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_customs.svg",
+      "image": "assets/img/cyprus_road_sign_customs.svg",
+      "name_el": "Στάση. Τελωνείο"
+    },
+    {
+      "id": "cyprus_road_sign_minimum_distance",
+      "category": "prohibitory",
+      "name_en": "Minimum distance",
+      "name_ru": "Минимальная дистанция",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_minimum_distance.svg",
+      "image": "assets/img/cyprus_road_sign_minimum_distance.svg",
+      "name_el": "Ελάχιστη απόσταση"
+    },
+    {
+      "id": "uk_traffic_sign_619",
+      "category": "prohibitory",
+      "name_en": "No motor vehicles (car and motorcycle)",
+      "name_ru": "Движение авто и мотоциклов запрещено",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_619.svg",
+      "image": "assets/img/uk_traffic_sign_619.svg",
+      "name_el": "Απαγόρευση μηχανοκίνητων οχημάτων (αυτοκίνητα και μοτοσικλέτες)"
+    },
+    {
+      "id": "uk_traffic_sign_811",
+      "category": "prohibitory",
+      "name_en": "Priority over vehicles from the opposite direction",
+      "name_ru": "Преимущество перед встречным движением",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_811.svg",
+      "image": "assets/img/uk_traffic_sign_811.svg",
+      "name_el": "Προτεραιότητα έναντι αντίθετης κυκλοφορίας"
+    },
+    {
+      "id": "uk_traffic_sign_617",
+      "category": "prohibitory",
+      "name_en": "No vehicles (road closed)",
+      "name_ru": "Движение запрещено в обоих направлениях",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_617.svg",
+      "image": "assets/img/uk_traffic_sign_617.svg",
+      "name_el": "Απαγόρευση οχημάτων (κλειστός δρόμος)"
+    },
+    {
+      "id": "cyprus_road_sign_maximum_large",
+      "category": "prohibitory",
+      "name_en": "No vehicles over width shown",
+      "name_ru": "Ограничение ширины",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_maximum_large.svg",
+      "image": "assets/img/cyprus_road_sign_maximum_large.svg",
+      "name_el": "Απαγόρευση οχημάτων που υπερβαίνουν το πλάτος στην πινακίδα"
+    },
+    {
+      "id": "cyprus_road_sign_maximum_height",
+      "category": "prohibitory",
+      "name_en": "No vehicles over height shown",
+      "name_ru": "Ограничение высоты",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_maximum_height.svg",
+      "image": "assets/img/cyprus_road_sign_maximum_height.svg",
+      "name_el": "Απαγόρευση οχημάτων που υπερβαίνουν το ύψος στην πινακίδα"
+    },
+    {
+      "id": "uk_traffic_sign_622_1a",
+      "category": "prohibitory",
+      "name_en": "No heavy vehicles exceeding weight on the sign",
+      "name_ru": "Движение грузовиков тяжелее указанного запрещено",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_622.1A.svg",
+      "image": "assets/img/uk_traffic_sign_622_1a.svg",
+      "name_el": "Απαγόρευση βαρέων οχημάτων που υπερβαίνουν το βάρος στην πινακίδα"
+    },
+    {
+      "id": "cyprus_road_sign_no_heavy_vehicles",
+      "category": "prohibitory",
+      "name_en": "No heavy vehicles",
+      "name_ru": "Движение грузового транспорта запрещено",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_no_heavy_vehicles.svg",
+      "image": "assets/img/cyprus_road_sign_no_heavy_vehicles.svg",
+      "name_el": "Απαγόρευση βαρέων οχημάτων"
+    },
+    {
+      "id": "uk_traffic_sign_622_7",
+      "category": "prohibitory",
+      "name_en": "No towed caravans",
+      "name_ru": "Движение с прицепами-дачами запрещено",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_622.7.svg",
+      "image": "assets/img/uk_traffic_sign_622_7.svg",
+      "name_el": "Απαγόρευση ρυμουλκούμενων τροχόσπιτων"
+    },
+    {
+      "id": "uk_traffic_sign_616",
+      "category": "prohibitory",
+      "name_en": "No entry",
+      "name_ru": "Въезд запрещён",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_616.svg",
+      "image": "assets/img/uk_traffic_sign_616.svg",
+      "name_el": "Απαγόρευση εισόδου"
+    },
+    {
+      "id": "uk_traffic_sign_612",
+      "category": "prohibitory",
+      "name_en": "No right turn",
+      "name_ru": "Поворот направо запрещён",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_612.svg",
+      "image": "assets/img/uk_traffic_sign_612.svg",
+      "name_el": "Απαγόρευση δεξιάς στροφής"
+    },
+    {
+      "id": "uk_traffic_sign_613",
+      "category": "prohibitory",
+      "name_en": "No left turn",
+      "name_ru": "Поворот налево запрещён",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_613.svg",
+      "image": "assets/img/uk_traffic_sign_613.svg",
+      "name_el": "Απαγόρευση αριστερής στροφής"
+    },
+    {
+      "id": "cyprus_road_sign_maximum_speed",
+      "category": "prohibitory",
+      "name_en": "Maximum speed limit",
+      "name_ru": "Ограничение максимальной скорости",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_maximum_speed.svg",
+      "image": "assets/img/cyprus_road_sign_maximum_speed.svg",
+      "name_el": "Ανώτατο όριο ταχύτητας"
+    },
+    {
+      "id": "cyprus_road_sign_end_maximum_speed",
+      "category": "prohibitory",
+      "name_en": "End of maximum speed limit",
+      "name_ru": "Конец ограничения максимальной скорости",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_end_maximum_speed.svg",
+      "image": "assets/img/cyprus_road_sign_end_maximum_speed.svg",
+      "name_el": "Τέλος ανώτατου ορίου ταχύτητας"
+    },
+    {
+      "id": "uk_traffic_sign_615",
+      "category": "prohibitory",
+      "name_en": "Priority of vehicles from the opposite direction",
+      "name_ru": "Преимущество встречного движения",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_615.svg",
+      "image": "assets/img/uk_traffic_sign_615.svg",
+      "name_el": "Προτεραιότητα αντίθετης κυκλοφορίας"
+    },
+    {
+      "id": "uk_traffic_sign_632",
+      "category": "prohibitory",
+      "name_en": "No overtaking",
+      "name_ru": "Обгон запрещён",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_632.svg",
+      "image": "assets/img/uk_traffic_sign_632.svg",
+      "name_el": "Απαγόρευση προσπεράσματος"
+    },
+    {
+      "id": "cyprus_road_sign_end_no_overpass",
+      "category": "prohibitory",
+      "name_en": "End of no overtaking",
+      "name_ru": "Конец зоны запрета обгона",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_end_no_overpass.svg",
+      "image": "assets/img/cyprus_road_sign_end_no_overpass.svg",
+      "name_el": "Τέλος απαγόρευσης προσπεράσματος"
+    },
+    {
+      "id": "cyprus_road_sign_no_overpass_heavy_vehicles",
+      "category": "prohibitory",
+      "name_en": "No overtaking by heavy vehicles",
+      "name_ru": "Обгон грузовым транспортом запрещён",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_no_overpass_heavy_vehicles.svg",
+      "image": "assets/img/cyprus_road_sign_no_overpass_heavy_vehicles.svg",
+      "name_el": "Απαγόρευση προσπεράσματος από βαρέα οχήματα"
+    },
+    {
+      "id": "cyprus_road_sign_maximum_single_weight",
+      "category": "prohibitory",
+      "name_en": "Maximum single axle weight",
+      "name_ru": "Ограничение нагрузки на ось",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_maximum_single_weight.svg",
+      "image": "assets/img/cyprus_road_sign_maximum_single_weight.svg",
+      "name_el": "Μέγιστο βάρος ανά άξονα"
+    },
+    {
+      "id": "uk_traffic_sign_671",
+      "category": "prohibitory",
+      "name_en": "End of all local bans on moving vehicles",
+      "name_ru": "Конец всех местных ограничений",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_671.svg",
+      "image": "assets/img/uk_traffic_sign_671.svg",
+      "name_el": "Τέλος όλων των τοπικών απαγορεύσεων"
+    },
+    {
+      "id": "cyprus_road_sign_maximum_lenght",
+      "category": "prohibitory",
+      "name_en": "No vehicles over length shown",
+      "name_ru": "Ограничение длины",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_maximum_lenght.svg",
+      "image": "assets/img/cyprus_road_sign_maximum_lenght.svg",
+      "name_el": "Μέγιστο μήκος"
+    },
+    {
+      "id": "cyprus_road_sign_no_water_heavy_vehicles",
+      "category": "prohibitory",
+      "name_en": "No carrying materials that pollute water",
+      "name_ru": "Перевозка веществ, загрязняющих воду, запрещена",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_no_water_heavy_vehicles.svg",
+      "image": "assets/img/cyprus_road_sign_no_water_heavy_vehicles.svg",
+      "name_el": "Απαγόρευση μεταφοράς υδατορρυπαντικών υλικών"
+    },
+    {
+      "id": "cyprus_road_sign_maximum_heavy",
+      "category": "prohibitory",
+      "name_en": "No vehicles over weight shown",
+      "name_ru": "Ограничение массы",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_maximum_heavy.svg",
+      "image": "assets/img/cyprus_road_sign_maximum_heavy.svg",
+      "name_el": "Μέγιστο βάρος"
+    },
+    {
+      "id": "uk_traffic_sign_622_8",
+      "category": "prohibitory",
+      "name_en": "Carrying explosives prohibited",
+      "name_ru": "Перевозка взрывчатых веществ запрещена",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_622.8.svg",
+      "image": "assets/img/uk_traffic_sign_622_8.svg",
+      "name_el": "Απαγόρευση μεταφοράς εκρηκτικών (π.χ. πυροτεχνήματα)"
+    },
+    {
+      "id": "uk_traffic_sign_614",
+      "category": "prohibitory",
+      "name_en": "No U-turns",
+      "name_ru": "Разворот запрещён",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_614.svg",
+      "image": "assets/img/uk_traffic_sign_614.svg",
+      "name_el": "Απαγόρευση αναστροφής"
+    },
+    {
+      "id": "cyprus_road_sign_police",
+      "category": "regulatory",
+      "name_en": "Stop. Police roadblock",
+      "name_ru": "Стоп. Полицейский пост",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_police.svg",
+      "image": "assets/img/cyprus_road_sign_police.svg",
+      "name_el": "Στάση. Αστυνομικό μπλόκο"
+    },
+    {
+      "id": "cyprus_road_sign_stop",
+      "category": "regulatory",
+      "name_en": "Stop sign",
+      "name_ru": "Стоп, обязательная остановка",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_-_STOP.svg",
+      "image": "assets/img/cyprus_road_sign_stop.svg",
+      "name_el": "Σήμα στάσης"
+    },
+    {
+      "id": "cyprus_road_sign_priority_road",
+      "category": "regulatory",
+      "name_en": "Priority road",
+      "name_ru": "Главная дорога",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_priority_road.svg",
+      "image": "assets/img/cyprus_road_sign_priority_road.svg",
+      "name_el": "Δρόμος προτεραιότητας"
+    },
+    {
+      "id": "cyprus_road_sign_end_priority_road",
+      "category": "regulatory",
+      "name_en": "End of priority road",
+      "name_ru": "Конец главной дороги",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_end_priority_road.svg",
+      "image": "assets/img/cyprus_road_sign_end_priority_road.svg",
+      "name_el": "Τέλος δρόμου προτεραιότητας"
+    },
+    {
+      "id": "uk_traffic_sign_605_2",
+      "category": "regulatory",
+      "name_en": "Stop, crossroads by children",
+      "name_ru": "Стоп: переход, используемый детьми",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_605.2.svg",
+      "image": "assets/img/uk_traffic_sign_605_2.svg",
+      "name_el": "Στάση, σχολική διασταύρωση"
+    },
+    {
+      "id": "uk_traffic_sign_7024",
+      "category": "regulatory",
+      "name_en": "Manually operated temporary GO sign",
+      "name_ru": "Ручной временный знак «Ехать»",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_7024.svg",
+      "image": "assets/img/uk_traffic_sign_7024.svg",
+      "name_el": "Προχωρήστε — προσωρινό χειροκίνητο σήμα για οδικά έργα"
+    },
+    {
+      "id": "manually_operated_temporary_stop_signs",
+      "category": "regulatory",
+      "name_en": "Manually operated temporary STOP sign",
+      "name_ru": "Ручной временный знак «Стоп»",
+      "image_url": "https://driving.cy/signs/Signs/manually_operated_temporary_STOP_signs.png",
+      "image": "assets/img/manually_operated_temporary_stop_signs.png",
+      "name_el": "Χειροκίνητο προσωρινό σήμα ΣΤΑΣΗ"
+    },
+    {
+      "id": "cyprus_road_sign_give_way",
+      "category": "regulatory",
+      "name_en": "Give way",
+      "name_ru": "Уступите дорогу",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_give_way.svg",
+      "image": "assets/img/cyprus_road_sign_give_way.svg",
+      "name_el": "Παραχώρηση προτεραιότητας"
+    },
+    {
+      "id": "cyprus_road_sign_cross_guided",
+      "category": "regulatory",
+      "name_en": "Box junction sign",
+      "name_ru": "Перекрёсток с жёлтой сеткой",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_cross_guided.svg",
+      "image": "assets/img/cyprus_road_sign_cross_guided.svg",
+      "name_el": "Απαγόρευση στάσης εκτός αναμονής για στροφή"
+    },
+    {
+      "id": "cyprus_road_sign_road_bump_50",
+      "category": "regulatory",
+      "name_en": "Road hump ahead with speed limit",
+      "name_ru": "Неровность с ограничением скорости",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_road_bump_50.svg",
+      "image": "assets/img/cyprus_road_sign_road_bump_50.svg",
+      "name_el": "Ανώμαλο ύψωμα μπροστά με όριο ταχύτητας"
+    },
+    {
+      "id": "cyprus_road_sign_humped_crossing",
+      "category": "regulatory",
+      "name_en": "Humped crossing",
+      "name_ru": "Приподнятый пешеходный переход",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_humped_crossing.svg",
+      "image": "assets/img/cyprus_road_sign_humped_crossing.svg",
+      "name_el": "Υπερυψωμένη διάβαση"
+    },
+    {
+      "id": "cyprus_road_sign_humped_pellcan_crossing",
+      "category": "regulatory",
+      "name_en": "Humped pelican crossing",
+      "name_ru": "Приподнятый регулируемый переход",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_humped_pellcan_crossing.svg",
+      "image": "assets/img/cyprus_road_sign_humped_pellcan_crossing.svg",
+      "name_el": "Υπερυψωμένη διάβαση πεζών «πελεκάνος»"
+    },
+    {
+      "id": "cyprus_road_sign_school",
+      "category": "regulatory",
+      "name_en": "School",
+      "name_ru": "Школа",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_school.svg",
+      "image": "assets/img/cyprus_road_sign_school.svg",
+      "name_el": "Σχολείο"
+    },
+    {
+      "id": "cyprus_road_sign_road_humps_left",
+      "category": "regulatory",
+      "name_en": "Road humps left",
+      "name_ru": "Неровности слева",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_road_humps_left.svg",
+      "image": "assets/img/cyprus_road_sign_road_humps_left.svg",
+      "name_el": "Ανώμαλα υψώματα αριστερά"
+    },
+    {
+      "id": "cyprus_road_sign_road_humps_right",
+      "category": "regulatory",
+      "name_en": "Road humps right",
+      "name_ru": "Неровности справа",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_road_humps_right.svg",
+      "image": "assets/img/cyprus_road_sign_road_humps_right.svg",
+      "name_el": "Ανώμαλα υψώματα δεξιά"
+    },
+    {
+      "id": "cyprus_road_sign_road_humps",
+      "category": "regulatory",
+      "name_en": "Road humps",
+      "name_ru": "Участок с неровностями",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_road_humps.svg",
+      "image": "assets/img/cyprus_road_sign_road_humps.svg",
+      "name_el": "Ανώμαλα υψώματα"
+    },
+    {
+      "id": "vienna_convention_road_sign",
+      "category": "regulatory",
+      "name_en": "Living street",
+      "name_ru": "Жилая зона",
+      "image_url": "https://driving.cy/signs/Signs/Vienna_Convention_road_sign.svg",
+      "image": "assets/img/vienna_convention_road_sign.svg",
+      "name_el": "Οδός κατοικίας"
+    },
+    {
+      "id": "vienna_convention_road_sign_end",
+      "category": "regulatory",
+      "name_en": "End of living street",
+      "name_ru": "Конец жилой зоны",
+      "image_url": "https://driving.cy/signs/Signs/Vienna_Convention_road_sign_end.svg",
+      "image": "assets/img/vienna_convention_road_sign_end.svg",
+      "name_el": "Τέλος οδού κατοικίας"
+    },
+    {
+      "id": "beginning_of_bus_only_lane",
+      "category": "regulatory",
+      "name_en": "Beginning of bus only lane",
+      "name_ru": "Начало полосы для автобусов",
+      "image_url": "https://driving.cy/signs/Signs/Beginning-of-bus-only-lane.png",
+      "image": "assets/img/beginning_of_bus_only_lane.png",
+      "name_el": "Αρχή λωρίδας αποκλειστικά για λεωφορεία"
+    },
+    {
+      "id": "uk_traffic_sign_636",
+      "category": "no_parking",
+      "name_en": "No parking",
+      "name_ru": "Стоянка запрещена",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_636.svg",
+      "image": "assets/img/uk_traffic_sign_636.svg",
+      "name_el": "Απαγόρευση στάθμευσης"
+    },
+    {
+      "id": "uk_traffic_sign_642",
+      "category": "no_parking",
+      "name_en": "No stopping or parking (clearway)",
+      "name_ru": "Остановка и стоянка запрещены",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_642.svg",
+      "image": "assets/img/uk_traffic_sign_642.svg",
+      "name_el": "Απαγόρευση στάσης και στάθμευσης"
+    },
+    {
+      "id": "cyprus_road_sign_no_park_impares",
+      "category": "no_parking",
+      "name_en": "No parking on odd days of the month",
+      "name_ru": "Стоянка запрещена по нечётным числам",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_no_park_impares.svg",
+      "image": "assets/img/cyprus_road_sign_no_park_impares.svg",
+      "name_el": "Απαγόρευση στάθμευσης τις μονές ημέρες"
+    },
+    {
+      "id": "cyprus_road_sign_no_park_pares",
+      "category": "no_parking",
+      "name_en": "No parking on even days of the month",
+      "name_ru": "Стоянка запрещена по чётным числам",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_no_park_pares.svg",
+      "image": "assets/img/cyprus_road_sign_no_park_pares.svg",
+      "name_el": "Απαγόρευση στάθμευσης τις ζυγές ημέρες"
+    },
+    {
+      "id": "cyprus_road_sign_no_parking_zone",
+      "category": "no_parking",
+      "name_en": "No parking zone",
+      "name_ru": "Зона запрета стоянки",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_no_parking_zone.svg",
+      "image": "assets/img/cyprus_road_sign_no_parking_zone.svg",
+      "name_el": "Ζώνη απαγόρευσης στάθμευσης"
+    },
+    {
+      "id": "cyprus_road_sign_end_no_parking_zone",
+      "category": "no_parking",
+      "name_en": "End of no parking zone",
+      "name_ru": "Конец зоны запрета стоянки",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_end_no_parking_zone.svg",
+      "image": "assets/img/cyprus_road_sign_end_no_parking_zone.svg",
+      "name_el": "Τέλος ζώνης απαγόρευσης στάθμευσης"
+    },
+    {
+      "id": "cyprus_road_sign_mandatory_go_streight",
+      "category": "mandatory",
+      "name_en": "Go straight ahead only",
+      "name_ru": "Движение только прямо",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_mandatory_go_streight.svg",
+      "image": "assets/img/cyprus_road_sign_mandatory_go_streight.svg",
+      "name_el": "Μόνο ευθεία"
+    },
+    {
+      "id": "uk_traffic_sign_606_left",
+      "category": "mandatory",
+      "name_en": "Turn left",
+      "name_ru": "Поворот налево",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_606_(left).svg",
+      "image": "assets/img/uk_traffic_sign_606_left.svg",
+      "name_el": "Στροφή αριστερά"
+    },
+    {
+      "id": "uk_traffic_sign_606_right",
+      "category": "mandatory",
+      "name_en": "Turn right",
+      "name_ru": "Поворот направо",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_606_(right).svg",
+      "image": "assets/img/uk_traffic_sign_606_right.svg",
+      "name_el": "Στροφή δεξιά"
+    },
+    {
+      "id": "uk_traffic_sign_609_left",
+      "category": "mandatory",
+      "name_en": "Turn left ahead",
+      "name_ru": "Движение налево (впереди)",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_609_(left).svg",
+      "image": "assets/img/uk_traffic_sign_609_left.svg",
+      "name_el": "Στροφή αριστερά μπροστά"
+    },
+    {
+      "id": "uk_traffic_sign_609_right",
+      "category": "mandatory",
+      "name_en": "Turn right ahead",
+      "name_ru": "Движение направо (впереди)",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_609_(right).svg",
+      "image": "assets/img/uk_traffic_sign_609_right.svg",
+      "name_el": "Στροφή δεξιά μπροστά"
+    },
+    {
+      "id": "cyprus_road_sign_mandatory_go_or_left",
+      "category": "mandatory",
+      "name_en": "Go straight or turn left ahead",
+      "name_ru": "Прямо или налево",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_mandatory_go_or_left.svg",
+      "image": "assets/img/cyprus_road_sign_mandatory_go_or_left.svg",
+      "name_el": "Ευθεία ή στροφή αριστερά μπροστά"
+    },
+    {
+      "id": "cyprus_road_sign_mandatory_go_or_right",
+      "category": "mandatory",
+      "name_en": "Go straight or turn right ahead",
+      "name_ru": "Прямо или направо",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_mandatory_go_or_right.svg",
+      "image": "assets/img/cyprus_road_sign_mandatory_go_or_right.svg",
+      "name_el": "Ευθεία ή στροφή δεξιά μπροστά"
+    },
+    {
+      "id": "cyprus_road_sign_mandatory_left_or_right",
+      "category": "mandatory",
+      "name_en": "Turn left or right ahead",
+      "name_ru": "Налево или направо",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_mandatory_left_or_right.svg",
+      "image": "assets/img/cyprus_road_sign_mandatory_left_or_right.svg",
+      "name_el": "Στροφή αριστερά ή δεξιά μπροστά"
+    },
+    {
+      "id": "uk_traffic_sign_610_left",
+      "category": "mandatory",
+      "name_en": "Keep left",
+      "name_ru": "Держитесь левее",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_610_(left).svg",
+      "image": "assets/img/uk_traffic_sign_610_left.svg",
+      "name_el": "Κρατήστε αριστερά"
+    },
+    {
+      "id": "uk_traffic_sign_610_right",
+      "category": "mandatory",
+      "name_en": "Keep right",
+      "name_ru": "Держитесь правее",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_610_(right).svg",
+      "image": "assets/img/uk_traffic_sign_610_right.svg",
+      "name_el": "Κρατήστε δεξιά"
+    },
+    {
+      "id": "uk_traffic_sign_611",
+      "category": "mandatory",
+      "name_en": "Pass on either side",
+      "name_ru": "Объезд с любой стороны",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_611.svg",
+      "image": "assets/img/uk_traffic_sign_611.svg",
+      "name_el": "Διέλευση από οποιαδήποτε πλευρά"
+    },
+    {
+      "id": "uk_traffic_sign_611_1",
+      "category": "mandatory",
+      "name_en": "Roundabout (mandatory)",
+      "name_ru": "Круговое движение",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_611.1.svg",
+      "image": "assets/img/uk_traffic_sign_611_1.svg",
+      "name_el": "Κυκλικός κόμβος (υποχρεωτικό)"
+    },
+    {
+      "id": "cyprus_road_sign_one_way_road",
+      "category": "mandatory",
+      "name_en": "One-way traffic",
+      "name_ru": "Одностороннее движение",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_one_way_road.svg",
+      "image": "assets/img/cyprus_road_sign_one_way_road.svg",
+      "name_el": "Μονόδρομος"
+    },
+    {
+      "id": "cyprus_road_sign_one_way_lateral_road",
+      "category": "mandatory",
+      "name_en": "One-way road (lateral)",
+      "name_ru": "Одностороннее движение (боковая табличка)",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_one_way_lateral_road.svg",
+      "image": "assets/img/cyprus_road_sign_one_way_lateral_road.svg",
+      "name_el": "Μονόδρομος (πλευρικός)"
+    },
+    {
+      "id": "uk_traffic_sign_672",
+      "category": "mandatory",
+      "name_en": "Minimum speed limit",
+      "name_ru": "Минимальная скорость",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_672.svg",
+      "image": "assets/img/uk_traffic_sign_672.svg",
+      "name_el": "Ελάχιστο όριο ταχύτητας"
+    },
+    {
+      "id": "uk_traffic_sign_673",
+      "category": "mandatory",
+      "name_en": "End of minimum speed limit",
+      "name_ru": "Конец зоны минимальной скорости",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_673.svg",
+      "image": "assets/img/uk_traffic_sign_673.svg",
+      "name_el": "Τέλος ελάχιστου ορίου ταχύτητας"
+    },
+    {
+      "id": "cyprus_road_sign_mandatory_chains",
+      "category": "mandatory",
+      "name_en": "Snow chains mandatory",
+      "name_ru": "Цепи противоскольжения обязательны",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_mandatory_chains.svg",
+      "image": "assets/img/cyprus_road_sign_mandatory_chains.svg",
+      "name_el": "Υποχρεωτικές αλυσίδες χιονιού"
+    },
+    {
+      "id": "cyprus_road_sign_horse_street",
+      "category": "mandatory",
+      "name_en": "Horse street mandatory",
+      "name_ru": "Дорожка для всадников",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_horse_street.svg",
+      "image": "assets/img/cyprus_road_sign_horse_street.svg",
+      "name_el": "Υποχρεωτική οδός ιππασίας"
+    },
+    {
+      "id": "cyprus_road_sign_mandatory_pedestrian_way",
+      "category": "mandatory",
+      "name_en": "Pedestrian road mandatory",
+      "name_ru": "Пешеходная дорожка",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_mandatory_pedestrian_way.svg",
+      "image": "assets/img/cyprus_road_sign_mandatory_pedestrian_way.svg",
+      "name_el": "Υποχρεωτικός πεζόδρομος"
+    },
+    {
+      "id": "parking_taxi_only",
+      "category": "mandatory",
+      "name_en": "Parking (taxi only)",
+      "name_ru": "Стоянка только для такси",
+      "image_url": "https://driving.cy/signs/Signs/parking_taxi_only.png",
+      "image": "assets/img/parking_taxi_only.png",
+      "name_el": "Στάθμευση (μόνο ταξί)"
+    },
+    {
+      "id": "bus_only_lane",
+      "category": "mandatory",
+      "name_en": "Bus only lane",
+      "name_ru": "Полоса только для автобусов",
+      "image_url": "https://driving.cy/signs/Signs/Bus-only-lane.png",
+      "image": "assets/img/bus_only_lane.png",
+      "name_el": "Λωρίδα αποκλειστικά για λεωφορεία"
+    },
+    {
+      "id": "end_of_bus_only_passageway_with_distance",
+      "category": "mandatory",
+      "name_en": "End of bus only passageway (with distance)",
+      "name_ru": "Конец автобусной полосы (с расстоянием)",
+      "image_url": "https://driving.cy/signs/Signs/End-of-bus-only-passageway-with-distance.png",
+      "image": "assets/img/end_of_bus_only_passageway_with_distance.png",
+      "name_el": "Τέλος διαδρόμου αποκλειστικά για λεωφορεία (με απόσταση)"
+    },
+    {
+      "id": "compulsory_bus_only_passageway",
+      "category": "mandatory",
+      "name_en": "Compulsory bus only passageway",
+      "name_ru": "Обязательный проезд только для автобусов",
+      "image_url": "https://driving.cy/signs/Signs/Compulsory-bus-only-passageway.png",
+      "image": "assets/img/compulsory_bus_only_passageway.png",
+      "name_el": "Υποχρεωτικός διάδρομος αποκλειστικά για λεωφορεία"
+    },
+    {
+      "id": "cyprus_road_sign_next_destinations",
+      "category": "info",
+      "name_en": "Direction sign",
+      "name_ru": "Указатель направлений",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_next_destinations.svg",
+      "image": "assets/img/cyprus_road_sign_next_destinations.svg",
+      "name_el": "Σήμα κατεύθυνσης (με αυτοκινητόδρομο)"
+    },
+    {
+      "id": "cyprus_road_sign_destinations_road_crossing",
+      "category": "info",
+      "name_en": "Direction sign (at a road crossing)",
+      "name_ru": "Указатель направлений на перекрёстке",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_destinations_road_crossing.svg",
+      "image": "assets/img/cyprus_road_sign_destinations_road_crossing.svg",
+      "name_el": "Σήμα κατεύθυνσης (σε διασταύρωση)"
+    },
+    {
+      "id": "cyprus_road_sign_destinations_white",
+      "category": "info",
+      "name_en": "Direction sign (white)",
+      "name_ru": "Указатель направлений (белый)",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_destinations_white.svg",
+      "image": "assets/img/cyprus_road_sign_destinations_white.svg",
+      "name_el": "Σήμα κατεύθυνσης (λευκό)"
+    },
+    {
+      "id": "cyprus_road_sign_destinations_blue",
+      "category": "info",
+      "name_en": "Direction sign (blue)",
+      "name_ru": "Указатель направлений (синий)",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_destinations_blue.svg",
+      "image": "assets/img/cyprus_road_sign_destinations_blue.svg",
+      "name_el": "Σήμα κατεύθυνσης (μπλε)"
+    },
+    {
+      "id": "cyprus_road_sign_bus_stop",
+      "category": "info",
+      "name_en": "Bus stop",
+      "name_ru": "Остановка автобуса",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_bus_stop.svg",
+      "image": "assets/img/cyprus_road_sign_bus_stop.svg",
+      "name_el": "Στάση λεωφορείου"
+    },
+    {
+      "id": "cyprus_road_sign_pedonal_crossing",
+      "category": "info",
+      "name_en": "Pedestrian crossing",
+      "name_ru": "Пешеходный переход",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_pedonal_crossing.svg",
+      "image": "assets/img/cyprus_road_sign_pedonal_crossing.svg",
+      "name_el": "Διάβαση πεζών"
+    },
+    {
+      "id": "cyprus_road_sign_parking",
+      "category": "info",
+      "name_en": "Parking",
+      "name_ru": "Парковка",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_parking.svg",
+      "image": "assets/img/cyprus_road_sign_parking.svg",
+      "name_el": "Στάθμευση"
+    },
+    {
+      "id": "cyprus_road_sign_cul_de_sac",
+      "category": "info",
+      "name_en": "Dead end straight ahead",
+      "name_ru": "Тупик прямо",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_cul_de_sac.svg",
+      "image": "assets/img/cyprus_road_sign_cul_de_sac.svg",
+      "name_el": "Αδιέξοδο ευθεία"
+    },
+    {
+      "id": "cyprus_road_sign_cul_de_sac_ahead_left",
+      "category": "info",
+      "name_en": "Dead end left",
+      "name_ru": "Тупик слева",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_cul_de_sac_ahead_left.svg",
+      "image": "assets/img/cyprus_road_sign_cul_de_sac_ahead_left.svg",
+      "name_el": "Αδιέξοδο αριστερά"
+    },
+    {
+      "id": "cyprus_road_sign_cul_de_sac_ahead_right",
+      "category": "info",
+      "name_en": "Dead end right",
+      "name_ru": "Тупик справа",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_cul_de_sac_ahead_right.svg",
+      "image": "assets/img/cyprus_road_sign_cul_de_sac_ahead_right.svg",
+      "name_el": "Αδιέξοδο δεξιά"
+    },
+    {
+      "id": "cyprus_road_sign_sos",
+      "category": "info",
+      "name_en": "Emergency phone",
+      "name_ru": "Телефон экстренной связи",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_SOS.svg",
+      "image": "assets/img/cyprus_road_sign_sos.svg",
+      "name_el": "Τηλέφωνο έκτακτης ανάγκης"
+    },
+    {
+      "id": "cyprus_road_sign_road_for_motorvehicles",
+      "category": "info",
+      "name_en": "Highway road",
+      "name_ru": "Дорога для автомобилей",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_road_for_motorvehicles.svg",
+      "image": "assets/img/cyprus_road_sign_road_for_motorvehicles.svg",
+      "name_el": "Οδός ταχείας κυκλοφορίας"
+    },
+    {
+      "id": "cyprus_road_sign_end_road_for_motorvehicles",
+      "category": "info",
+      "name_en": "End of highway",
+      "name_ru": "Конец дороги для автомобилей",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_end_road_for_motorvehicles.svg",
+      "image": "assets/img/cyprus_road_sign_end_road_for_motorvehicles.svg",
+      "name_el": "Τέλος οδού ταχείας κυκλοφορίας"
+    },
+    {
+      "id": "cyprus_road_sign_transitability",
+      "category": "info",
+      "name_en": "Open road (only with snow chains)",
+      "name_ru": "Дорога открыта (только с цепями)",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_transitability.svg",
+      "image": "assets/img/cyprus_road_sign_transitability.svg",
+      "name_el": "Ανοικτός δρόμος (μόνο για οχήματα με αλυσίδες χιονιού)"
+    },
+    {
+      "id": "cyprus_road_sign_drive_on_the_left",
+      "category": "info",
+      "name_en": "Drive on the left",
+      "name_ru": "Движение левостороннее (у аэропортов и портов)",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_drive_on_the_left.svg",
+      "image": "assets/img/cyprus_road_sign_drive_on_the_left.svg",
+      "name_el": "Προειδοποίηση για οδήγηση από αριστερά (στο Ακρωτήρι και τη Δεκέλεια)"
+    },
+    {
+      "id": "cyprus_road_sign_vehicles_exit",
+      "category": "info",
+      "name_en": "Vehicle exit",
+      "name_ru": "Выезд транспорта",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_vehicles_exit.svg",
+      "image": "assets/img/cyprus_road_sign_vehicles_exit.svg",
+      "name_el": "Έξοδος οχημάτων"
+    },
+    {
+      "id": "cyprus_road_sign_general_limits",
+      "category": "info",
+      "name_en": "General speed limits",
+      "name_ru": "Общие ограничения скорости",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_general_limits.svg",
+      "image": "assets/img/cyprus_road_sign_general_limits.svg",
+      "name_el": "Γενικά όρια ταχύτητας"
+    },
+    {
+      "id": "cyprus_road_sign_roundabound_destinations",
+      "category": "info",
+      "name_en": "Direction sign at a roundabout",
+      "name_ru": "Указатель на круговой развязке",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_roundabound_destinations.svg",
+      "image": "assets/img/cyprus_road_sign_roundabound_destinations.svg",
+      "name_el": "Σήμα κατεύθυνσης σε κυκλικό κόμβο"
+    },
+    {
+      "id": "cyprus_road_sign_confirm",
+      "category": "info",
+      "name_en": "Confirmation sign",
+      "name_ru": "Подтверждающий указатель",
+      "image_url": "https://driving.cy/signs/Signs/Cyprus_road_sign_confirm.svg",
+      "image": "assets/img/cyprus_road_sign_confirm.svg",
+      "name_el": "Σήμα επιβεβαίωσης"
+    },
+    {
+      "id": "city_speed_limit_sign_in_polis_cyprus",
+      "category": "info",
+      "name_en": "City speed limit sign",
+      "name_ru": "Ограничение скорости в населённом пункте",
+      "image_url": "https://driving.cy/signs/Signs/City_speed_limit_sign_in_Polis,_Cyprus.svg",
+      "image": "assets/img/city_speed_limit_sign_in_polis_cyprus.svg",
+      "name_el": "Κατοικημένη περιοχή"
+    },
+    {
+      "id": "tunnel_ahead",
+      "category": "info",
+      "name_en": "Tunnel ahead",
+      "name_ru": "Впереди тоннель",
+      "image_url": "https://driving.cy/signs/Signs/tunnel-ahead.png",
+      "image": "assets/img/tunnel_ahead.png",
+      "name_el": "Σήραγγα μπροστά"
+    },
+    {
+      "id": "suggested_speed_limit",
+      "category": "info",
+      "name_en": "Suggested speed limit",
+      "name_ru": "Рекомендуемая скорость",
+      "image_url": "https://driving.cy/signs/Signs/suggested-speed-limit.png",
+      "image": "assets/img/suggested_speed_limit.png",
+      "name_el": "Συνιστώμενο όριο ταχύτητας"
+    },
+    {
+      "id": "traffic_sign_gr_kok_2009_p_32",
+      "category": "info",
+      "name_en": "First aid",
+      "name_ru": "Пункт первой помощи",
+      "image_url": "https://driving.cy/signs/Signs/Traffic_Sign_GR_-_KOK_2009_-_P-32.svg",
+      "image": "assets/img/traffic_sign_gr_kok_2009_p_32.svg",
+      "name_el": "Πρώτες βοήθειες"
+    },
+    {
+      "id": "traffic_sign_gr_kok_2009_p_33",
+      "category": "info",
+      "name_en": "Repairs",
+      "name_ru": "Техобслуживание",
+      "image_url": "https://driving.cy/signs/Signs/Traffic_Sign_GR_-_KOK_2009_-_P-33.svg",
+      "image": "assets/img/traffic_sign_gr_kok_2009_p_33.svg",
+      "name_el": "Συνεργείο"
+    },
+    {
+      "id": "traffic_sign_gr_kok_2009_p_34",
+      "category": "info",
+      "name_en": "Telephone",
+      "name_ru": "Телефон",
+      "image_url": "https://driving.cy/signs/Signs/Traffic_Sign_GR_-_KOK_2009_-_P-34.svg",
+      "image": "assets/img/traffic_sign_gr_kok_2009_p_34.svg",
+      "name_el": "Τηλέφωνο"
+    },
+    {
+      "id": "traffic_sign_gr_kok_2009_p_35",
+      "category": "info",
+      "name_en": "Petrol station",
+      "name_ru": "АЗС",
+      "image_url": "https://driving.cy/signs/Signs/Traffic_Sign_GR_-_KOK_2009_-_P-35.svg",
+      "image": "assets/img/traffic_sign_gr_kok_2009_p_35.svg",
+      "name_el": "Βενζινάδικο"
+    },
+    {
+      "id": "traffic_sign_gr_kok_2009_p_36",
+      "category": "info",
+      "name_en": "Hotel or motel",
+      "name_ru": "Гостиница или мотель",
+      "image_url": "https://driving.cy/signs/Signs/Traffic_Sign_GR_-_KOK_2009_-_P-36.svg",
+      "image": "assets/img/traffic_sign_gr_kok_2009_p_36.svg",
+      "name_el": "Ξενοδοχείο ή μοτέλ"
+    },
+    {
+      "id": "traffic_sign_gr_kok_2009_p_37",
+      "category": "info",
+      "name_en": "Restaurant",
+      "name_ru": "Ресторан",
+      "image_url": "https://driving.cy/signs/Signs/Traffic_Sign_GR_-_KOK_2009_-_P-37.svg",
+      "image": "assets/img/traffic_sign_gr_kok_2009_p_37.svg",
+      "name_el": "Εστιατόριο"
+    },
+    {
+      "id": "traffic_sign_gr_kok_2009_p_38",
+      "category": "info",
+      "name_en": "Refreshments",
+      "name_ru": "Кафе, буфет",
+      "image_url": "https://driving.cy/signs/Signs/Traffic_Sign_GR_-_KOK_2009_-_P-38.svg",
+      "image": "assets/img/traffic_sign_gr_kok_2009_p_38.svg",
+      "name_el": "Αναψυκτήριο"
+    },
+    {
+      "id": "traffic_sign_gr_kok_2009_p_39",
+      "category": "info",
+      "name_en": "Camping zone",
+      "name_ru": "Зона отдыха",
+      "image_url": "https://driving.cy/signs/Signs/Traffic_Sign_GR_-_KOK_2009_-_P-39.svg",
+      "image": "assets/img/traffic_sign_gr_kok_2009_p_39.svg",
+      "name_el": "Χώρος πικ-νικ"
+    },
+    {
+      "id": "traffic_sign_gr_kok_2009_p_40",
+      "category": "info",
+      "name_en": "Hiking trail",
+      "name_ru": "Пешеходный маршрут",
+      "image_url": "https://driving.cy/signs/Signs/Traffic_Sign_GR_-_KOK_2009_-_P-40.svg",
+      "image": "assets/img/traffic_sign_gr_kok_2009_p_40.svg",
+      "name_el": "Μονοπάτι πεζοπορίας"
+    },
+    {
+      "id": "traffic_sign_gr_kok_2009_p_41",
+      "category": "info",
+      "name_en": "Camping site",
+      "name_ru": "Кемпинг",
+      "image_url": "https://driving.cy/signs/Signs/Traffic_Sign_GR_-_KOK_2009_-_P-41.svg",
+      "image": "assets/img/traffic_sign_gr_kok_2009_p_41.svg",
+      "name_el": "Χώρος κατασκήνωσης"
+    },
+    {
+      "id": "traffic_sign_gr_kok_2009_p_42",
+      "category": "info",
+      "name_en": "Caravan site",
+      "name_ru": "Стоянка автодомов",
+      "image_url": "https://driving.cy/signs/Signs/Traffic_Sign_GR_-_KOK_2009_-_P-42.svg",
+      "image": "assets/img/traffic_sign_gr_kok_2009_p_42.svg",
+      "name_el": "Χώρος τροχόσπιτων"
+    },
+    {
+      "id": "traffic_sign_gr_kok_2009_p_43",
+      "category": "info",
+      "name_en": "Camping and caravan site",
+      "name_ru": "Кемпинг и стоянка автодомов",
+      "image_url": "https://driving.cy/signs/Signs/Traffic_Sign_GR_-_KOK_2009_-_P-43.svg",
+      "image": "assets/img/traffic_sign_gr_kok_2009_p_43.svg",
+      "name_el": "Χώρος κατασκήνωσης και τροχόσπιτων"
+    },
+    {
+      "id": "traffic_sign_gr_kok_2009_p_44",
+      "category": "info",
+      "name_en": "Excursion zone",
+      "name_ru": "Экскурсионная зона",
+      "image_url": "https://driving.cy/signs/Signs/Traffic_Sign_GR_-_KOK_2009_-_P-44.svg",
+      "image": "assets/img/traffic_sign_gr_kok_2009_p_44.svg",
+      "name_el": "Κέντρο νεολαίας"
+    },
+    {
+      "id": "traffic_sign_gr_kok_2009_p_45",
+      "category": "info",
+      "name_en": "Information",
+      "name_ru": "Информация",
+      "image_url": "https://driving.cy/signs/Signs/Traffic_Sign_GR_-_KOK_2009_-_P-45.svg",
+      "image": "assets/img/traffic_sign_gr_kok_2009_p_45.svg",
+      "name_el": "Πληροφορίες"
+    },
+    {
+      "id": "traffic_sign_gr_kok_2009_p_47",
+      "category": "info",
+      "name_en": "Toilet",
+      "name_ru": "Туалет",
+      "image_url": "https://driving.cy/signs/Signs/Traffic_Sign_GR_-_KOK_2009_-_P-47.svg",
+      "image": "assets/img/traffic_sign_gr_kok_2009_p_47.svg",
+      "name_el": "Τουαλέτα"
+    },
+    {
+      "id": "traffic_sign_gr_kok_2009_p_50",
+      "category": "info",
+      "name_en": "Airport",
+      "name_ru": "Аэропорт",
+      "image_url": "https://driving.cy/signs/Signs/Traffic_Sign_GR_-_KOK_2009_-_P-50.svg",
+      "image": "assets/img/traffic_sign_gr_kok_2009_p_50.svg",
+      "name_el": "Αεροδρόμιο"
+    },
+    {
+      "id": "traffic_sign_gr_kok_2009_p_51",
+      "category": "info",
+      "name_en": "Helicopter",
+      "name_ru": "Вертолётная площадка",
+      "image_url": "https://driving.cy/signs/Signs/Traffic_Sign_GR_-_KOK_2009_-_P-51.svg",
+      "image": "assets/img/traffic_sign_gr_kok_2009_p_51.svg",
+      "name_el": "Ελικόπτερο"
+    },
+    {
+      "id": "traffic_sign_gr_kok_2009_p_61",
+      "category": "info",
+      "name_en": "Pedestrian overpass",
+      "name_ru": "Надземный пешеходный переход",
+      "image_url": "https://driving.cy/signs/Signs/Traffic_Sign_GR_-_KOK_2009_-_P-61.svg",
+      "image": "assets/img/traffic_sign_gr_kok_2009_p_61.svg",
+      "name_el": "Πεζογέφυρα"
+    },
+    {
+      "id": "traffic_sign_gr_kok_2009_p_62",
+      "category": "info",
+      "name_en": "Pedestrian underpass",
+      "name_ru": "Подземный пешеходный переход",
+      "image_url": "https://driving.cy/signs/Signs/Traffic_Sign_GR_-_KOK_2009_-_P-62.svg",
+      "image": "assets/img/traffic_sign_gr_kok_2009_p_62.svg",
+      "name_el": "Υπόγεια διάβαση πεζών"
+    },
+    {
+      "id": "traffic_sign_gr_kok_2009_p_63",
+      "category": "info",
+      "name_en": "Pedestrian ramp",
+      "name_ru": "Пешеходный пандус",
+      "image_url": "https://driving.cy/signs/Signs/Traffic_Sign_GR_-_KOK_2009_-_P-63.svg",
+      "image": "assets/img/traffic_sign_gr_kok_2009_p_63.svg",
+      "name_el": "Ράμπα πεζών"
+    },
+    {
+      "id": "vienna_convention_road_sign_h7_v1_1",
+      "category": "additional",
+      "name_en": "Allowed only for disabled vehicles",
+      "name_ru": "Только для ТС инвалидов",
+      "image_url": "https://driving.cy/signs/Signs/Vienna_Convention_road_sign_H7-V1-1.svg",
+      "image": "assets/img/vienna_convention_road_sign_h7_v1_1.svg",
+      "name_el": "Επιτρέπεται μόνο για αναπηρικά οχήματα"
+    },
+    {
+      "id": "vienna_convention_road_sign_h4a_v1_1",
+      "category": "additional",
+      "name_en": "No stop and parking, perpendicular to the street",
+      "name_ru": "Запрет остановки и стоянки (поперёк улицы)",
+      "image_url": "https://driving.cy/signs/Signs/Vienna_Convention_road_sign_H4a-V1-1.svg",
+      "image": "assets/img/vienna_convention_road_sign_h4a_v1_1.svg",
+      "name_el": "«Απαγόρευση στάθμευσης και παύσης», κάθετα στον δρόμο"
+    },
+    {
+      "id": "vienna_convention_road_sign_h4b_v1_1",
+      "category": "additional",
+      "name_en": "Repetition: no stop and parking, perpendicular",
+      "name_ru": "Повтор запрета остановки и стоянки (поперёк)",
+      "image_url": "https://driving.cy/signs/Signs/Vienna_Convention_road_sign_H4b-V1-1.svg",
+      "image": "assets/img/vienna_convention_road_sign_h4b_v1_1.svg",
+      "name_el": "Επανάληψη του σήματος «Απαγορεύεται η στάθμευση και η παύση», κάθετα στον δρόμο"
+    },
+    {
+      "id": "vienna_convention_road_sign_h4c_v1_1",
+      "category": "additional",
+      "name_en": "End of no stop and parking, perpendicular",
+      "name_ru": "Конец запрета остановки и стоянки (поперёк)",
+      "image_url": "https://driving.cy/signs/Signs/Vienna_Convention_road_sign_H4c-V1-1.svg",
+      "image": "assets/img/vienna_convention_road_sign_h4c_v1_1.svg",
+      "name_el": "Τέλος του σήματος «Απαγορεύεται η στάθμευση και η παύση», τοποθετημένο κάθετα στον δρόμο"
+    },
+    {
+      "id": "vienna_convention_road_sign_h1_v1_1",
+      "category": "additional",
+      "name_en": "Distance from the sign to the signed area",
+      "name_ru": "Расстояние до начала зоны действия",
+      "image_url": "https://driving.cy/signs/Signs/Vienna_Convention_road_sign_H1-V1-1.svg",
+      "image": "assets/img/vienna_convention_road_sign_h1_v1_1.svg",
+      "name_el": "Απόσταση από το σήμα μέχρι την περιοχή που καλύπτεται από το σήμα"
+    },
+    {
+      "id": "vienna_convention_road_sign_h2_v1_1",
+      "category": "additional",
+      "name_en": "Length of the hazardous or restricted section",
+      "name_ru": "Протяжённость зоны действия",
+      "image_url": "https://driving.cy/signs/Signs/Vienna_Convention_road_sign_H2-V1-1.svg",
+      "image": "assets/img/vienna_convention_road_sign_h2_v1_1.svg",
+      "name_el": "Μήκος της επικίνδυνης περιοχής απαγόρευσης ή περιορισμού"
+    },
+    {
+      "id": "vienna_convention_road_sign_h3a_v1_1",
+      "category": "additional",
+      "name_en": "No stop and parking from sign position, parallel",
+      "name_ru": "Запрет остановки и стоянки от знака (вдоль улицы)",
+      "image_url": "https://driving.cy/signs/Signs/Vienna_Convention_road_sign_H3a-V1-1.svg",
+      "image": "assets/img/vienna_convention_road_sign_h3a_v1_1.svg",
+      "name_el": "Σήμα «Απαγορεύεται η στάθμευση και η παύση» από την θέση του σήματος τοποθετημένο παράλληλα στον δρόμο"
+    },
+    {
+      "id": "vienna_convention_road_sign_h3b_v1_1",
+      "category": "additional",
+      "name_en": "Reminder: no stop and parking, parallel",
+      "name_ru": "Повтор запрета остановки и стоянки (вдоль улицы)",
+      "image_url": "https://driving.cy/signs/Signs/Vienna_Convention_road_sign_H3b-V1-1.svg",
+      "image": "assets/img/vienna_convention_road_sign_h3b_v1_1.svg",
+      "name_el": "Υπενθύμιση του σήματος «Απαγορεύεται η στάθμευση και η παύση», τοποθετημένο παράλληλα στον δρόμο"
+    },
+    {
+      "id": "vienna_convention_road_sign_h9_v1_1",
+      "category": "additional",
+      "name_en": "Icy road",
+      "name_ru": "Гололёд",
+      "image_url": "https://driving.cy/signs/Signs/Vienna_Convention_road_sign_H9-V1-1.svg",
+      "image": "assets/img/vienna_convention_road_sign_h9_v1_1.svg",
+      "name_el": "Ολισθηρός δρόμος"
+    },
+    {
+      "id": "vienna_convention_road_sign_h8b_v1_1",
+      "category": "additional",
+      "name_en": "Direction of priority road",
+      "name_ru": "Направление главной дороги",
+      "image_url": "https://driving.cy/signs/Signs/Vienna_Convention_road_sign_H8b-V1-1.svg",
+      "image": "assets/img/vienna_convention_road_sign_h8b_v1_1.svg",
+      "name_el": "Κατεύθυνση της προτεραιότητας του δρόμου"
+    },
+    {
+      "id": "highway_begin_in_cyprus",
+      "category": "other",
+      "name_en": "Highway",
+      "name_ru": "Автомагистраль",
+      "image_url": "https://driving.cy/signs/Signs/Highway_begin_in_Cyprus.png",
+      "image": "assets/img/highway_begin_in_cyprus.png",
+      "name_el": "Αυτοκινητόδρομος"
+    },
+    {
+      "id": "highway_end_in_cyprus",
+      "category": "other",
+      "name_en": "End of highway",
+      "name_ru": "Конец автомагистрали",
+      "image_url": "https://driving.cy/signs/Signs/Highway_end_in_Cyprus.png",
+      "image": "assets/img/highway_end_in_cyprus.png",
+      "name_el": "Τέλος αυτοκινητόδρομου"
+    },
+    {
+      "id": "informational_sign_on_a_motorway_in_cyprus",
+      "category": "other",
+      "name_en": "Highway exit warning",
+      "name_ru": "Предупреждение о съезде с автомагистрали",
+      "image_url": "https://driving.cy/signs/Signs/Informational_sign_on_a_motorway_in_Cyprus.svg",
+      "image": "assets/img/informational_sign_on_a_motorway_in_cyprus.svg",
+      "name_el": "Προειδοποίηση για έξοδο από τον αυτοκινητόδρομο"
+    },
+    {
+      "id": "motorway_exit_sign_in_cyprus",
+      "category": "other",
+      "name_en": "Motorway exit",
+      "name_ru": "Съезд с автомагистрали",
+      "image_url": "https://driving.cy/signs/Signs/Motorway_exit_sign_in_Cyprus.png",
+      "image": "assets/img/motorway_exit_sign_in_cyprus.png",
+      "name_el": "Έξοδος από τον αυτοκινητόδρομο"
+    },
+    {
+      "id": "uk_traffic_sign_955",
+      "category": "other",
+      "name_en": "Cycle lane",
+      "name_ru": "Велосипедная полоса",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_955.svg",
+      "image": "assets/img/uk_traffic_sign_955.svg",
+      "name_el": "Λωρίδα ποδηλατών"
+    },
+    {
+      "id": "uk_traffic_sign_957",
+      "category": "other",
+      "name_en": "Cycle path separated from pedestrian path",
+      "name_ru": "Велодорожка, отделённая от пешеходной",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_957.svg",
+      "image": "assets/img/uk_traffic_sign_957.svg",
+      "name_el": "Ποδηλατόδρομος ξεχωριστός από τον πεζόδρομο"
+    },
+    {
+      "id": "uk_traffic_sign_956",
+      "category": "other",
+      "name_en": "Road shared by cyclists and pedestrians",
+      "name_ru": "Совмещённая вело-пешеходная дорожка",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_956.svg",
+      "image": "assets/img/uk_traffic_sign_956.svg",
+      "name_el": "Δρόμος κοινός για ποδηλάτες και πεζούς"
+    },
+    {
+      "id": "uk_traffic_sign_953",
+      "category": "other",
+      "name_en": "Road shared by bicycles and buses",
+      "name_ru": "Полоса для велосипедов и автобусов",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_953.svg",
+      "image": "assets/img/uk_traffic_sign_953.svg",
+      "name_el": "Δρόμος κοινός για ποδήλατα και λεωφορεία"
+    },
+    {
+      "id": "uk_traffic_sign_951",
+      "category": "other",
+      "name_en": "No bicycles allowed",
+      "name_ru": "Движение велосипедов запрещено",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_951.svg",
+      "image": "assets/img/uk_traffic_sign_951.svg",
+      "name_el": "Απαγορεύεται η κυκλοφορία ποδηλάτων"
+    },
+    {
+      "id": "uk_traffic_sign_950",
+      "category": "other",
+      "name_en": "Road with special measures for cyclists",
+      "name_ru": "Дорога с мерами для велосипедистов",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_950.svg",
+      "image": "assets/img/uk_traffic_sign_950.svg",
+      "name_el": "Δρόμος με ειδικά μέτρα για ποδηλάτες"
+    },
+    {
+      "id": "uk_traffic_sign_879",
+      "category": "other",
+      "name_en": "Speed camera",
+      "name_ru": "Камера контроля скорости",
+      "image_url": "https://driving.cy/signs/Signs/UK_traffic_sign_879.svg",
+      "image": "assets/img/uk_traffic_sign_879.svg",
+      "name_el": "Κάμερα ελέγχου ταχύτητας"
+    },
+    {
+      "id": "roundabout_road_sign_in_cyprus1",
+      "category": "north",
+      "name_en": "Roundabout to population centres and occupied areas",
+      "name_ru": "Круговая развязка к населённым пунктам и оккупированным районам",
+      "image_url": "https://driving.cy/signs/Signs/Roundabout_road_sign_in_Cyprus1.svg",
+      "image": "assets/img/roundabout_road_sign_in_cyprus1.svg",
+      "name_el": "Κυκλικός κόμβος προς τους οικισμούς και τις κατεχόμενες περιοχές"
+    },
+    {
+      "id": "warning_sign_in_cyprus",
+      "category": "north",
+      "name_en": "Stop — Turkish occupied area (green line)",
+      "name_ru": "Стоп — оккупированная территория (зелёная линия)",
+      "image_url": "https://driving.cy/signs/Signs/Warning_sign_in_Cyprus.png",
+      "image": "assets/img/warning_sign_in_cyprus.png",
+      "name_el": "Στάση — Κατεχόμενη περιοχή. Σήμα της Δημοκρατίας της Κύπρου, όπου τοποθετείται στη γραμμή πράσινης κατάπαυσης του πυρός"
+    },
+    {
+      "id": "stop_for_traffic_approaching_from_the_front",
+      "category": "warden",
+      "name_en": "Stop for traffic from the front",
+      "name_ru": "Стоп для транспорта спереди",
+      "image_url": "https://driving.cy/signs/Signs/Stop-for-traffic-approaching-from-the-front.jpg",
+      "image": "assets/img/stop_for_traffic_approaching_from_the_front.jpg",
+      "name_el": "Στάση για την κυκλοφορία από μπροστά"
+    },
+    {
+      "id": "stop_for_traffic_approaching_from_both_front_and_behind",
+      "category": "warden",
+      "name_en": "Stop for traffic from both front and behind",
+      "name_ru": "Стоп спереди и сзади",
+      "image_url": "https://driving.cy/signs/Signs/Stop-for-traffic-approaching-from-both-front-and-behind.jpg",
+      "image": "assets/img/stop_for_traffic_approaching_from_both_front_and_behind.jpg",
+      "name_el": "Στάση για την κυκλοφορία από μπροστά και από πίσω"
+    },
+    {
+      "id": "stop_for_traffic_approaching_from_behind",
+      "category": "warden",
+      "name_en": "Stop for traffic from behind",
+      "name_ru": "Стоп для транспорта сзади",
+      "image_url": "https://driving.cy/signs/Signs/Stop-for-traffic-approaching-from-behind.jpg",
+      "image": "assets/img/stop_for_traffic_approaching_from_behind.jpg",
+      "name_el": "Στάση για την κυκλοφορία από πίσω"
+    },
+    {
+      "id": "proceed_to_traffic_approaching_from_the_front",
+      "category": "warden",
+      "name_en": "Proceed: traffic from the front",
+      "name_ru": "Проезд транспорту спереди",
+      "image_url": "https://driving.cy/signs/Signs/Proceed-to-traffic-approaching-from-the-front.jpg",
+      "image": "assets/img/proceed_to_traffic_approaching_from_the_front.jpg",
+      "name_el": "Προχώρα για την κυκλοφορία από μπροστά"
+    },
+    {
+      "id": "proceed_to_traffic_approaching_from_the_side",
+      "category": "warden",
+      "name_en": "Proceed: traffic from the side",
+      "name_ru": "Проезд транспорту сбоку",
+      "image_url": "https://driving.cy/signs/Signs/Proceed-to-traffic-approaching-from-the-side.jpg",
+      "image": "assets/img/proceed_to_traffic_approaching_from_the_side.jpg",
+      "name_el": "Προχώρα για την κυκλοφορία από το πλάι"
+    },
+    {
+      "id": "proceed_to_traffic_approaching_from_the_behind",
+      "category": "warden",
+      "name_en": "Proceed: traffic from behind",
+      "name_ru": "Проезд транспорту сзади",
+      "image_url": "https://driving.cy/signs/Signs/Proceed-to-traffic-approaching-from-the-behind.jpg",
+      "image": "assets/img/proceed_to_traffic_approaching_from_the_behind.jpg",
+      "name_el": "Προχώρα για την κυκλοφορία από πίσω"
+    },
+    {
+      "id": "no_parking_or_overtaking",
+      "category": "marking",
+      "name_en": "Single continuous line",
+      "name_ru": "Одинарная сплошная: обгон запрещён, разделяет встречные потоки",
+      "image_url": "https://driving.cy/signs/Signs/No-parking-or-overtaking.jpg",
+      "image": "assets/img/no_parking_or_overtaking.jpg",
+      "name_el": "Μονή συνεχής γραμμή — απαγόρευση προσπεράσματος και διαχωρισμός αντίθετων κατευθύνσεων"
+    },
+    {
+      "id": "no_parking_or_overtaking_1",
+      "category": "marking",
+      "name_en": "Double continuous lines",
+      "name_ru": "Двойная сплошная: обгон запрещён с обеих сторон",
+      "image_url": "https://driving.cy/signs/Signs/No-parking-or-overtaking-1.jpg",
+      "image": "assets/img/no_parking_or_overtaking_1.jpg",
+      "name_el": "Διπλή συνεχής γραμμή — απαγόρευση προσπεράσματος και διαχωρισμός αντίθετων κατευθύνσεων"
+    },
+    {
+      "id": "overtaking_allowed_from_right",
+      "category": "marking",
+      "name_en": "Single line: solid left, overtaking allowed from right",
+      "name_ru": "Комбинированная: сплошная слева, обгон справа разрешён",
+      "image_url": "https://driving.cy/signs/Signs/Overtaking-allowed-from-right.jpg",
+      "image": "assets/img/overtaking_allowed_from_right.jpg",
+      "name_el": "Η προσπέραση επιτρέπεται από τα δεξιά"
+    },
+    {
+      "id": "overtaking_is_allowed",
+      "category": "marking",
+      "name_en": "Lane dividers: overtaking is allowed",
+      "name_ru": "Прерывистая: обгон разрешён",
+      "image_url": "https://driving.cy/signs/Signs/Overtaking-is-allowed.jpg",
+      "image": "assets/img/overtaking_is_allowed.jpg",
+      "name_el": "Διαχωριστικές γραμμές λωρίδων: η προσπέραση επιτρέπεται"
+    },
+    {
+      "id": "no_parking_or_waiting_or_overtaking",
+      "category": "marking",
+      "name_en": "Zigzag lines: no parking, waiting or overtaking",
+      "name_ru": "Зигзаг: стоянка, ожидание и обгон запрещены",
+      "image_url": "https://driving.cy/signs/Signs/No-parking-or-waiting-or-overtaking.jpg",
+      "image": "assets/img/no_parking_or_waiting_or_overtaking.jpg",
+      "name_el": "Γραμμές ζιγκ-ζαγκ: Απαγόρευση στάθμευσης, αναμονής ή προσπεράσματος"
+    },
+    {
+      "id": "depicts_the_side_of_the_carriageway_no_parking",
+      "category": "marking",
+      "name_en": "White side line: edge of carriageway, no parking",
+      "name_ru": "Белая краевая линия: край проезжей части, стоянка запрещена",
+      "image_url": "https://driving.cy/signs/Signs/Depicts-the-side-of-the-carriageway-–-No-parking.png",
+      "image": "assets/img/depicts_the_side_of_the_carriageway_no_parking.png",
+      "name_el": "Στην πλευρά του δρόμου - Απαγορεύεται η στάθμευση"
+    },
+    {
+      "id": "broken_side_line",
+      "category": "marking",
+      "name_en": "Broken side line: entrances or exits on the left",
+      "name_ru": "Прерывистая краевая: въезды и выезды слева",
+      "image_url": "https://driving.cy/signs/Signs/broken-side-line.png",
+      "image": "assets/img/broken_side_line.png",
+      "name_el": "Διακεκομμένη πλευρική γραμμή — υποδεικνύει εισόδους ή εξόδους στα αριστερά"
+    },
+    {
+      "id": "yellow_side_line",
+      "category": "marking",
+      "name_en": "Yellow side line: no parking beyond the line",
+      "name_ru": "Жёлтая краевая: не парковаться и не выезжать за линию",
+      "image_url": "https://driving.cy/signs/Signs/yellow-side-line.png",
+      "image": "assets/img/yellow_side_line.png",
+      "name_el": "Κίτρινη πλευρική γραμμή — μη σταθμεύετε ή χρησιμοποιείτε τον δρόμο πέρα από τη γραμμή"
+    },
+    {
+      "id": "double_continuous_yellow",
+      "category": "marking",
+      "name_en": "Double continuous yellow line: no stop, no parking",
+      "name_ru": "Двойная жёлтая: остановка и стоянка запрещены",
+      "image_url": "https://driving.cy/signs/Signs/double-continuous-yellow.png",
+      "image": "assets/img/double_continuous_yellow.png",
+      "name_el": "Διπλή συνεχής κίτρινη γραμμή — Απαγόρευση στάσης και στάθμευσης"
+    },
+    {
+      "id": "give_way_to_traffic_on_main_road",
+      "category": "marking",
+      "name_en": "Give way T-junction line",
+      "name_ru": "Линия «уступи дорогу» на Т-образном перекрёстке",
+      "image_url": "https://driving.cy/signs/Signs/Give-way-to-traffic-on-main-road.jpg",
+      "image": "assets/img/give_way_to_traffic_on_main_road.jpg",
+      "name_el": "Δώστε προτεραιότητα στην κυκλοφορία στο κύριο δρόμο"
+    },
+    {
+      "id": "stop_and_give_way",
+      "category": "marking",
+      "name_en": "Stop T-junction line",
+      "name_ru": "Стоп-линия на Т-образном перекрёстке",
+      "image_url": "https://driving.cy/signs/Signs/Stop-and-give-way.jpg",
+      "image": "assets/img/stop_and_give_way.jpg",
+      "name_el": "Σταματήστε και δώστε προτεραιότητα"
+    },
+    {
+      "id": "directions_on_roundabout",
+      "category": "marking",
+      "name_en": "Directions on roundabout",
+      "name_ru": "Разметка направлений на круговой развязке",
+      "image_url": "https://driving.cy/signs/Signs/Directions-on-roundabout.jpg",
+      "image": "assets/img/directions_on_roundabout.jpg",
+      "name_el": "Κατευθύνσεις στο κυκλικό κόμβο"
+    },
+    {
+      "id": "default_roundabout_lane",
+      "category": "roundabout",
+      "name_en": "Roundabout: 2 lanes directions",
+      "name_ru": "Круговая развязка: выбор из 2 полос",
+      "image_url": "https://driving.cy/signs/Signs/Default-roundabout-lane.jpg",
+      "image": "assets/img/default_roundabout_lane.jpg",
+      "name_el": "Κατευθύνσεις στο κυκλικό κόμβο με 2 λωρίδες"
+    },
+    {
+      "id": "default_roundabout_lane_1",
+      "category": "roundabout",
+      "name_en": "Roundabout: 3 lanes directions",
+      "name_ru": "Круговая развязка: выбор из 3 полос",
+      "image_url": "https://driving.cy/signs/Signs/Default-roundabout-lane-1.jpg",
+      "image": "assets/img/default_roundabout_lane_1.jpg",
+      "name_el": "Κατευθύνσεις στο κυκλικό κόμβο με 3 λωρίδες"
+    }
+  ]
+}
