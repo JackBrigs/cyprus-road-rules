@@ -72,6 +72,14 @@ docker compose up -d --build
 docker compose logs -f
 ```
 
+В Kubernetes — манифесты и пояснения в [`deploy/`](deploy/README.md):
+
+```bash
+kubectl -n cyprus-signs-bot create secret generic bot-secrets \
+  --from-literal=BOT_TOKEN='<токен>'
+kubectl apply -k deploy/k8s/overlays/production
+```
+
 Прогресс пользователей лежит в `var/bot.db` (SQLite) и переживает пересборку образа —
 каталог примонтирован томом.
 

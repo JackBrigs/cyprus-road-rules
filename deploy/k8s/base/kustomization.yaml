@@ -1,0 +1,34 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+# Базовый набор: всё, что нужно боту в любом окружении.
+# Отличия окружений — в overlays/.
+
+namespace: cyprus-signs-bot
+
+labels:
+  - includeSelectors: true
+    pairs:
+      app.kubernetes.io/name: cyprus-signs-bot
+      app.kubernetes.io/component: bot
+
+resources:
+  - namespace.yaml
+  - pvc.yaml
+  - deployment.yaml
+
+configMapGenerator:
+  - name: bot-config
+    literals:
+      - LOG_LEVEL=INFO
+      - DB_PATH=/app/var/bot.db
+
+# BOT_TOKEN — секрет, в репозитории его нет. Создать отдельно:
+#   kubectl -n cyprus-signs-bot create secret generic bot-secrets \
+#     --from-literal=BOT_TOKEN=<токен от @BotFather>
+# Шаблон — в secret.example.yaml (в kustomization намеренно не включён).
+
+# Образ намеренно оставлен как плейсхолдер `cyprus-signs-bot`: реестр и тег
+# задаёт оверлей. Если прописать их здесь, оверлей уже не сможет их
+# переопределить — трансформер images ищет исходное имя.
+# Разворачивать нужно оверлей, не base.

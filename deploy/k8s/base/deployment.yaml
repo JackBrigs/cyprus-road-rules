@@ -1,0 +1,66 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cyprus-signs-bot
+spec:
+  # Строго одна реплика. Бот работает в режиме long polling: два пода начали бы
+  # разбирать одни и те же апдейты, и Telegram отдавал бы их по очереди то
+  # одному, то другому. Плюс SQLite на RWO-томе не рассчитан на двух писателей.
+  replicas: 1
+  strategy:
+    # Не RollingUpdate: новый под не должен подниматься, пока старый держит
+    # том и опрашивает Telegram.
+    type: Recreate
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: cyprus-signs-bot
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: cyprus-signs-bot
+    spec:
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        runAsGroup: 10001
+        fsGroup: 10001
+        seccompProfile:
+          type: RuntimeDefault
+      # Бот сам корректно завершает опрос по SIGTERM — даём доиграть апдейты.
+      terminationGracePeriodSeconds: 30
+      containers:
+        - name: bot
+          image: cyprus-signs-bot
+          imagePullPolicy: IfNotPresent
+          command: ["python", "-m", "bot.main"]
+          envFrom:
+            - configMapRef:
+                name: bot-config
+            - secretRef:
+                name: bot-secrets
+          volumeMounts:
+            - name: data
+              mountPath: /app/var
+            - name: tmp
+              mountPath: /tmp
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities:
+              drop: ["ALL"]
+          resources:
+            requests:
+              cpu: 50m
+              memory: 128Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi
+          # Проб нет намеренно: бот не слушает порт, входящего трафика у него
+          # нет. Падение процесса — это выход контейнера, и его перезапустит
+          # сам kubelet по restartPolicy.
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: bot-data
+        - name: tmp
+          emptyDir: {}

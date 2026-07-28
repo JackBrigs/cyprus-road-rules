@@ -1,0 +1,25 @@
+# Контекст сборки: в образ нужны только bot/, data/ и assets/.
+.git/
+.github/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Состояние и секреты
+var/
+.env
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Не нужно в образе
+deploy/
+scripts/
+docker-compose.yml
+Dockerfile
+.dockerignore
+.gitignore
+CLAUDE.md
+README.md

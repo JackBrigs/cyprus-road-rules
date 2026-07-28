@@ -1,0 +1,24 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ../../base
+
+# Продакшен катится по тегу, а не по latest: иначе непонятно, что именно
+# запущено, и откат невозможен.
+images:
+  - name: cyprus-signs-bot
+    newName: ghcr.io/jackbrigs/cyprus-road-rules
+    newTag: v0.1.0
+
+configMapGenerator:
+  - name: bot-config
+    behavior: merge
+    literals:
+      - LOG_LEVEL=INFO
+
+patches:
+  - path: patch-resources.yaml
+    target:
+      kind: Deployment
+      name: cyprus-signs-bot

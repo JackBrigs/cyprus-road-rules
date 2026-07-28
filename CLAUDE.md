@@ -55,8 +55,10 @@ no_parking (6), warden (6), north (2), roundabout (2). Итого 234.
 - Python 3.11+, **aiogram 3.x** (async, FSM из коробки).
 - SQLite через `aiosqlite` — прогресс пользователей. Без ORM, прямой SQL: проект маленький.
 - Конфиг: переменная окружения `BOT_TOKEN` (python-dotenv для локальной разработки).
-- Деплой: Dockerfile + docker-compose.yml (пользователь — DevOps, k8s-манифесты не нужны,
-  но Dockerfile должен быть production-grade: non-root user, healthcheck не нужен для polling).
+- Деплой: Dockerfile + docker-compose.yml, production-grade (non-root user, healthcheck
+  не нужен для polling). Манифесты Kubernetes — в `deploy/k8s/` (kustomize, base + overlays),
+  пояснения к решениям в `deploy/README.md`. Ограничение: ровно одна реплика и стратегия
+  Recreate — long polling и SQLite на RWO-томе не допускают второго пода.
 - Режим работы: **long polling** (не webhook) — проще для self-hosted.
 
 ## Функциональные требования
@@ -128,6 +130,12 @@ cyprus-signs-bot/
 ├── README.md
 ├── Dockerfile
 ├── docker-compose.yml
+├── .dockerignore
+├── deploy/
+│   ├── README.md         # решения по деплою
+│   └── k8s/
+│       ├── base/         # namespace, deployment, pvc, шаблон секрета
+│       └── overlays/production/
 ├── requirements.txt
 ├── .env.example          # BOT_TOKEN=
 ├── bot/
