@@ -14,14 +14,15 @@ from aiogram.fsm.context import FSMContext
 from aiogram.types import CallbackQuery, Message
 
 from .. import keyboards as kb
-from .menu import greeting
+from ..db import Db
+from .menu import menu_text
 
 log = logging.getLogger(__name__)
 router = Router(name="fallback")
 
 
 @router.callback_query()
-async def expired_session(callback: CallbackQuery, state: FSMContext) -> None:
+async def expired_session(callback: CallbackQuery, state: FSMContext, db: Db) -> None:
     log.info(
         "Кнопка без обработчика: data=%r состояние=%s", callback.data, await state.get_state()
     )
@@ -29,7 +30,9 @@ async def expired_session(callback: CallbackQuery, state: FSMContext) -> None:
     await callback.answer("Эта сессия уже завершена — начните заново", show_alert=True)
     if callback.message is None:
         return
-    await callback.message.answer(greeting(), reply_markup=kb.main_menu())
+    await callback.message.answer(
+        await menu_text(db, callback.from_user.id), reply_markup=kb.main_menu()
+    )
 
 
 @router.message()
