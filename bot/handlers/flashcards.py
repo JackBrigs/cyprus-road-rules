@@ -13,17 +13,15 @@ from aiogram.utils.markdown import hbold, hitalic
 
 from .. import cards, keyboards as kb, media
 from ..cards import Card, Deck
-from ..db import Db
+from ..db import Db, now_ts
 
 log = logging.getLogger(__name__)
 router = Router(name="flashcards")
 
 MODE = "cards"
 
-DONE_TEXT = (
-    "🎉 <b>На сегодня всё повторено</b>\n\n"
-    "Новых карточек в этой категории не осталось, а повторение придёт по расписанию.\n"
-    "Загляните позже или выберите другую категорию."
+EMPTY_TEXT = (
+    "В этой категории нет карточек — выберите другую."
 )
 
 
@@ -70,13 +68,20 @@ async def begin_session(callback: CallbackQuery, state: FSMContext, db: Db) -> N
     if callback.message is None:
         return
 
-    card = await _next_card(db, callback.from_user.id, deck, category)
-    if card is None:
-        await callback.message.edit_text(DONE_TEXT, reply_markup=kb.back_to_menu())
+    picked = await _next_card(db, callback.from_user.id, deck, category)
+    if picked is None:
+        await callback.message.edit_text(EMPTY_TEXT, reply_markup=kb.back_to_menu())
         return
+    card, scheduled = picked
 
     await state.set_state(Flashcards.showing_card)
-    await state.update_data(deck=deck_name, category=category, card_key=card.key)
+    await state.update_data(
+        deck=deck_name,
+        category=category,
+        card_key=card.key,
+        scheduled=scheduled,
+        shown=[card.key],
+    )
 
     # Меню — текстовое сообщение, фото в него не вставить: убираем и шлём карточку.
     await callback.message.delete()
@@ -106,23 +111,37 @@ async def next_card(callback: CallbackQuery, state: FSMContext, db: Db) -> None:
     category = data["category"]
     current_key = data["card_key"]
 
-    # Самооценки нет: просмотренная карточка продвигается на коробку вперёд, то есть
-    # показывается всё реже. Возвращают карточку в начало ошибки в тесте.
-    box = await db.advance(callback.from_user.id, current_key)
-    await callback.answer(_next_toast(box))
+    # Самооценки нет: просмотренная по расписанию карточка продвигается на коробку
+    # вперёд и показывается всё реже. Вернуть её в начало может только ошибка в тесте.
+    # Карточку, открытую вне расписания, не трогаем: пролистывание колоды не должно
+    # раздувать интервалы.
+    if data.get("scheduled", True):
+        box = await db.advance(callback.from_user.id, current_key)
+        toast = _next_toast(box)
+    else:
+        toast = "Вне расписания — срок повторения не сдвигаем"
+    await callback.answer(toast)
 
     if callback.message is None:
         return
 
-    card = await _next_card(db, callback.from_user.id, deck, category, exclude=current_key)
-    if card is None:
+    # Обошли всю категорию — начинаем круг заново.
+    shown = data.get("shown", [])
+    if len(shown) >= deck.count(category):
+        shown = []
+
+    picked = await _next_card(
+        db, callback.from_user.id, deck, category, exclude=current_key, skip=set(shown)
+    )
+    if picked is None:
         await state.clear()
         await callback.message.delete()
-        await callback.message.answer(DONE_TEXT, reply_markup=kb.back_to_menu())
+        await callback.message.answer(EMPTY_TEXT, reply_markup=kb.back_to_menu())
         return
+    card, scheduled = picked
 
     await state.set_state(Flashcards.showing_card)
-    await state.update_data(card_key=card.key)
+    await state.update_data(card_key=card.key, scheduled=scheduled, shown=[*shown, card.key])
     await media.replace_card(
         callback.message, db, card, _question_caption(deck, category, card), kb.card_question()
     )
@@ -131,32 +150,68 @@ async def next_card(callback: CallbackQuery, state: FSMContext, db: Db) -> None:
 # --- выборка карточек ------------------------------------------------------
 
 async def _next_card(
-    db: Db, user_id: int, deck: Deck, category: str, exclude: str | None = None
-) -> Card | None:
-    """Сначала то, что пора повторить, затем ещё не показанное.
+    db: Db,
+    user_id: int,
+    deck: Deck,
+    category: str,
+    exclude: str | None = None,
+    skip: set[str] | None = None,
+) -> tuple[Card, bool] | None:
+    """Следующая карточка и признак «показана по расписанию».
 
-    ``exclude`` — карточка, которую только что показали: её срок может наступить
-    сразу (например, после сброса ошибкой в тесте), и без этого фильтра она бы
-    показалась второй раз подряд.
+    Карточки доступны всегда — режим не упирается в «на сегодня всё повторено».
+    Расписание задаёт лишь порядок:
+
+    1. то, что пора повторить (раньше подошёл срок — раньше покажем);
+    2. то, что ещё ни разу не открывали;
+    3. всё остальное, начиная с ближайших к сроку.
+
+    Третья группа — просмотр вне расписания. Такие карточки возвращаются с
+    ``False``, и интервал повторения по ним не сдвигается: иначе пролистывание
+    колоды раздувало бы сроки и ломало повторение.
+
+    ``exclude`` — только что показанная карточка: без этого фильтра она бы
+    выпадала второй раз подряд, когда в категории почти нечего показывать.
+    ``skip`` — показанные в этой сессии: у карточек вне расписания сроки часто
+    совпадают, и без обхода по кругу бот крутил бы одни и те же две штуки.
     """
+    skip = set(skip or ())
     pool = deck.in_category(category)
     if not pool:
         return None
 
-    due = await db.due_keys(user_id, [c.key for c in pool])
-    for key in due:
-        if key != exclude:
-            return deck.by_key(key)
+    progress = await db.progress_for(user_id, [c.key for c in pool])
+    now = now_ts()
 
-    seen = await db.seen_keys(user_id)
-    fresh = [c for c in pool if c.key not in seen and c.key != exclude]
-    if fresh:
-        return random.choice(fresh)
+    due, fresh, later = [], [], []
+    for card in pool:
+        seen_at = progress.get(card.key)
+        if seen_at is None:
+            fresh.append(card)
+        elif seen_at <= now:
+            due.append(card)
+        else:
+            later.append(card)
 
-    # Ничего кроме только что оценённой карточки не осталось — показываем её.
-    if exclude and due:
-        return deck.by_key(exclude)
-    return None
+    due.sort(key=lambda c: progress[c.key])
+    later.sort(key=lambda c: progress[c.key])
+    random.shuffle(fresh)
+
+    groups = ((due, True), (fresh, True), (later, False))
+    for group, scheduled in groups:
+        for card in group:
+            if card.key != exclude and card.key not in skip:
+                return card, scheduled
+
+    # Круг пройден — начинаем заново, избегая только текущей карточки.
+    for group, scheduled in groups:
+        for card in group:
+            if card.key != exclude:
+                return card, scheduled
+
+    # В категории всего одна карточка — показываем её же.
+    only = deck.by_key(exclude) if exclude else None
+    return (only, False) if only else None
 
 
 # --- тексты ----------------------------------------------------------------

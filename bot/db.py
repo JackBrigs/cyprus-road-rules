@@ -112,26 +112,20 @@ class Db:
             row = await cur.fetchone()
         return row["box"] if row else None
 
-    async def due_keys(self, user_id: int, keys: list[str], now: int | None = None) -> list[str]:
-        """Ключи карточек из ``keys``, у которых подошёл срок повторения."""
+    async def progress_for(self, user_id: int, keys: list[str]) -> dict[str, int]:
+        """``{ключ карточки: срок следующего показа}`` для тех, что уже показывали.
+
+        Карточек без записи здесь нет — это новые, их ещё не открывали.
+        """
         if not keys:
-            return []
-        now = now_ts() if now is None else now
+            return {}
         placeholders = ",".join("?" * len(keys))
         sql = (
-            f"SELECT card_id FROM progress "
-            f"WHERE user_id = ? AND due_at <= ? AND card_id IN ({placeholders}) "
-            f"ORDER BY due_at"
+            f"SELECT card_id, due_at FROM progress "
+            f"WHERE user_id = ? AND card_id IN ({placeholders})"
         )
-        async with self.conn.execute(sql, (user_id, now, *keys)) as cur:
-            return [row["card_id"] for row in await cur.fetchall()]
-
-    async def seen_keys(self, user_id: int) -> set[str]:
-        """Карточки, у которых уже есть запись прогресса (то есть не новые)."""
-        async with self.conn.execute(
-            "SELECT card_id FROM progress WHERE user_id = ?", (user_id,)
-        ) as cur:
-            return {row["card_id"] for row in await cur.fetchall()}
+        async with self.conn.execute(sql, (user_id, *keys)) as cur:
+            return {row["card_id"]: row["due_at"] for row in await cur.fetchall()}
 
     async def advance(self, user_id: int, card_key: str) -> int:
         """Отмечает карточку просмотренной и возвращает новую коробку."""
