@@ -11,22 +11,13 @@ import sys
 from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
-from aiogram.types import BotCommand
-
-from . import cards
+from . import cards, profile
 from .config import load_config
 from .db import Db
 from .handlers import fallback, flashcards, menu, quiz
 from .storage import SqliteStorage
 
 log = logging.getLogger(__name__)
-
-COMMANDS = [
-    BotCommand(command="start", description="Начало и главное меню"),
-    BotCommand(command="cards", description="Карточки с повторением"),
-    BotCommand(command="quiz", description="Тест"),
-    BotCommand(command="stats", description="Мой прогресс"),
-]
 
 
 def setup_logging(level: str) -> None:
@@ -63,7 +54,7 @@ async def run() -> None:
     dispatcher.include_router(fallback.router)
 
     try:
-        await bot.set_my_commands(COMMANDS)
+        await profile.apply(bot)
         await bot.delete_webhook(drop_pending_updates=True)
         log.info("Запуск long polling")
         # aiogram сам вешает обработчики SIGINT/SIGTERM и корректно
